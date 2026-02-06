@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Update the base URL to match your GitHub Pages domain. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://example.com/</loc>
+  </url>
+  <url>
+    <loc>https://example.com/services.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/weddings.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/popups.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/gallery.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/faq.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/contact.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/policies/privacy.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/policies/cookies.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/policies/accessibility.html</loc>
+  </url>
+</urlset>
