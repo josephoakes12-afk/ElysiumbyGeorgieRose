@@ -1,84 +1,81 @@
 ﻿<!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Accessibility | Elysium by Georgie Rose</title>
-  <meta name="description" content="Accessibility statement for Elysium by Georgie Rose permanent jewellery.">
-  <meta property="og:title" content="Accessibility | Elysium by Georgie Rose">
-  <meta property="og:description" content="Accessibility commitment and contact information.">
-  <meta property="og:image" content="../assets/images/final-logo.jpg">
+  <title>Accessibility Statement | Elysium By Georgie Rose</title>
+  <meta name="description" content="Accessibility statement for Elysium By Georgie Rose website.">
+  <meta property="og:title" content="Accessibility Statement | Elysium By Georgie Rose">
+  <meta property="og:description" content="How accessibility is approached and how to report issues.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="../assets/images/final-logo.jpg">
+  <link rel="icon" href="../assets/images/final-logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/style.css">
-  <!-- Update image paths below if your filenames differ. -->
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="../index.html">
-        <img src="../assets/images/final-logo.jpg" alt="Elysium by Georgie Rose logo">
-        <div>
-          <div>Elysium by Georgie Rose</div>
-          <small class="text-muted">Permanent jewellery</small>
-        </div>
+      <a class="brand" href="../index.html">
+        <img class="brand-mark" src="../assets/images/final-logo.jpg" alt="Elysium By Georgie Rose logo" width="50" height="50">
+        <span class="brand-text">
+          <span class="brand-name" data-brand-name>Elysium By Georgie Rose</span>
+          <span class="brand-tagline">Nails and Permanent Jewellery</span>
+        </span>
       </a>
-      <div class="nav-actions">
-        <nav class="site-nav" aria-label="Main">
-          <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navMenu">Menu</button>
-          <div id="navMenu" class="nav-links">
-            <a href="../index.html">Home</a>
-            <a href="../services.html">Services</a>
-            <a href="../weddings.html">Weddings</a>
-            <a href="../popups.html">Pop-ups</a>
-            <a href="../gallery.html">Gallery</a>
-            <a href="../faq.html">FAQs</a>
-            <a href="../contact.html">Contact</a>
-          </div>
-        </nav>
-        <a class="btn btn-primary" href="../contact.html">Book / Enquire</a>
+      <nav class="nav-shell" aria-label="Primary">
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+        <div class="nav-backdrop" data-nav-backdrop></div>
+        <div id="site-menu" class="site-nav-links" data-nav-menu>
+          <a href="../index.html">Home</a>
+          <a href="../nails.html">Nails</a>
+          <a href="../jewellery.html">Permanent Jewellery</a>
+          <a href="../gallery.html">Gallery</a>
+          <a href="../contact.html">Contact / Book</a>
+        </div>
+      </nav>
+      <div class="header-meta">
+        <a class="btn btn-primary" data-book-link href="../contact.html">Book / Enquire</a>
       </div>
     </div>
   </header>
 
-  <main id="main">
+  <main id="main-content">
     <section class="hero">
-      <div class="container">
-        <p class="pill">Policies</p>
-        <h1>Accessibility statement</h1>
-        <p class="lead">Last updated: 6 February 2026</p>
+      <div class="container hero-copy">
+        <span class="eyebrow">Policy</span>
+        <h1 class="hero-title">Accessibility statement</h1>
+        <p class="lead">Last updated: 8 February 2026</p>
       </div>
     </section>
 
     <section class="section surface">
       <div class="container grid grid-2">
-        <div class="card">
-          <h2>Our commitment</h2>
-          <p class="text-muted">We aim to make this website usable for everyone. If you experience any barriers, please tell us and we will help.</p>
-        </div>
-        <div class="card">
-          <h2>Accessibility features</h2>
-          <ul>
-            <li>Semantic HTML with clear headings.</li>
-            <li>High-contrast text on light backgrounds.</li>
-            <li>Keyboard-friendly navigation and focus states.</li>
-            <li>Accessible form labels and skip link.</li>
+        <article class="card">
+          <h2>Accessibility approach</h2>
+          <ul class="info-list">
+            <li>Semantic headings and landmarks across key pages.</li>
+            <li>Keyboard navigation support and visible focus states.</li>
+            <li>Reduced motion support for visitors who prefer less animation.</li>
+            <li>Responsive layouts optimised for mobile and desktop.</li>
           </ul>
-        </div>
+        </article>
+        <article class="card">
+          <h2>Known limitations</h2>
+          <p class="muted">Some third-party embeds may not provide the same accessibility support as the core site content. Fallback content is provided where practical.</p>
+        </article>
       </div>
     </section>
 
     <section class="section">
-      <div class="container grid grid-2">
-        <div class="card">
-          <h2>Feedback</h2>
-          <p class="text-muted">Email us at <a href="mailto:hello@elysiumbygeorgierose.co.uk">hello@elysiumbygeorgierose.co.uk</a> with any accessibility requests.</p>
-        </div>
-        <div class="card">
-          <h2>Alternative formats</h2>
-          <p class="text-muted">We can provide information in alternative formats on request.</p>
-        </div>
+      <div class="container card">
+        <h2>Contact for accessibility support</h2>
+        <p class="muted">If you experience accessibility issues, request alternative content, or need help completing an enquiry, contact:</p>
+        <p><a href="mailto:hello@elysiumbygeorgierose.co.uk">hello@elysiumbygeorgierose.co.uk</a></p>
       </div>
     </section>
   </main>
@@ -86,35 +83,35 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div>
-        <h3>Elysium by Georgie Rose</h3>
-        <p class="text-muted">Permanent jewellery experiences in Staffordshire and beyond. Custom-fitted, welded, and designed to last.</p>
-        <small>(c) <span data-year></span> Elysium by Georgie Rose.</small>
+        <h2 class="footer-title" data-brand-name>Elysium By Georgie Rose</h2>
+        <p>Premium nails and permanent jewellery services with an editorial, detail-led finish.</p>
+        <address data-location-text>Serving Staffordshire and surrounding areas.</address>
+        <small>&copy; <span data-year></span> <span data-brand-name>Elysium By Georgie Rose</span>. All rights reserved.</small>
       </div>
       <div class="footer-links">
         <strong>Quick links</strong>
-        <a href="../services.html">Services</a>
-        <a href="../weddings.html">Weddings</a>
-        <a href="../popups.html">Pop-ups</a>
+        <a href="../index.html">Home</a>
+        <a href="../nails.html">Nails</a>
+        <a href="../jewellery.html">Permanent Jewellery</a>
         <a href="../gallery.html">Gallery</a>
-        <a href="../contact.html">Contact</a>
+        <a href="../contact.html">Contact / Book</a>
       </div>
       <div class="footer-links">
         <strong>Policies</strong>
         <a href="privacy.html">Privacy</a>
         <a href="cookies.html">Cookies</a>
         <a href="accessibility.html">Accessibility</a>
+      </div>
+      <div class="footer-links">
         <strong>Social</strong>
-        <a href="https://www.instagram.com/elysium_by_georgierose/" target="_blank" rel="noreferrer">Instagram</a>
-        <a href="https://www.facebook.com/profile.php?id=61571925904476" target="_blank" rel="noreferrer">Facebook</a>
+        <a data-social-link="instagram" href="#">Instagram</a>
+        <a data-social-link="facebook" href="#">Facebook</a>
+        <span data-contact-email-wrap>Email: <a data-contact-email-link href="mailto:hello@elysiumbygeorgierose.co.uk">hello@elysiumbygeorgierose.co.uk</a></span>
       </div>
     </div>
   </footer>
 
-  <div class="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie notice">
-    <span>We only use cookies for embedded social content. You can continue browsing if you are happy with this.</span>
-    <button type="button">Got it</button>
-  </div>
-
-  <script src="../assets/site.js"></script>
+  <script src="../assets/site-config.js"></script>
+  <script src="../assets/main.js" defer></script>
 </body>
 </html>

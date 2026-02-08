@@ -1,34 +1,39 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!-- Update the base URL to match your GitHub Pages domain. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://example.com/</loc>
+    <loc>https://www.elysiumpermanentjewellery.co.uk/</loc>
   </url>
   <url>
-    <loc>https://example.com/services.html</loc>
+    <loc>https://www.elysiumpermanentjewellery.co.uk/nails.html</loc>
   </url>
   <url>
-    <loc>https://example.com/weddings.html</loc>
+    <loc>https://www.elysiumpermanentjewellery.co.uk/jewellery.html</loc>
   </url>
   <url>
-    <loc>https://example.com/popups.html</loc>
+    <loc>https://www.elysiumpermanentjewellery.co.uk/gallery.html</loc>
   </url>
   <url>
-    <loc>https://example.com/gallery.html</loc>
+    <loc>https://www.elysiumpermanentjewellery.co.uk/contact.html</loc>
   </url>
   <url>
-    <loc>https://example.com/faq.html</loc>
+    <loc>https://www.elysiumpermanentjewellery.co.uk/services.html</loc>
   </url>
   <url>
-    <loc>https://example.com/contact.html</loc>
+    <loc>https://www.elysiumpermanentjewellery.co.uk/faq.html</loc>
   </url>
   <url>
-    <loc>https://example.com/policies/privacy.html</loc>
+    <loc>https://www.elysiumpermanentjewellery.co.uk/popups.html</loc>
   </url>
   <url>
-    <loc>https://example.com/policies/cookies.html</loc>
+    <loc>https://www.elysiumpermanentjewellery.co.uk/weddings.html</loc>
   </url>
   <url>
-    <loc>https://example.com/policies/accessibility.html</loc>
+    <loc>https://www.elysiumpermanentjewellery.co.uk/policies/privacy.html</loc>
+  </url>
+  <url>
+    <loc>https://www.elysiumpermanentjewellery.co.uk/policies/cookies.html</loc>
+  </url>
+  <url>
+    <loc>https://www.elysiumpermanentjewellery.co.uk/policies/accessibility.html</loc>
   </url>
 </urlset>
