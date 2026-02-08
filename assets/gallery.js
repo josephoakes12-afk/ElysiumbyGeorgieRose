@@ -4,8 +4,8 @@
     { src: "assets/images/gallery/gallery-2.jpg", alt: "Gold bracelet stack" },
     { src: "assets/images/gallery/gallery-3.jpg", alt: "Sterling silver anklet" },
     { src: "assets/images/gallery/gallery-4.jpg", alt: "Welded ring detail" },
-    { src: "assets/images/gallery/gallery-5.jpg", alt: "Waist chain styling" },
-    { src: "assets/images/gallery/gallery-6.jpg", alt: "Necklace fitting" },
+    { src: "assets/images/gallery/gallery-5.jpg", alt: "Welded anklet detail" },
+    { src: "assets/images/gallery/gallery-6.jpg", alt: "Welded ring fitting" },
     { src: "assets/images/gallery/gallery-7.jpg", alt: "Pop-up station setup" },
     { src: "assets/images/gallery/gallery-8.jpg", alt: "Wedding guest experience" }
   ];

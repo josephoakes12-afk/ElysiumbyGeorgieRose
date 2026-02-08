@@ -62,20 +62,62 @@
     });
   };
 
-  const setOptionalLinkGroup = (wrapperSelector, linkSelector, value, protocol) => {
-    const wrappers = document.querySelectorAll(wrapperSelector);
+  const normalisePhoneForTel = (value) => {
+    if (!isNonEmptyString(value)) return "";
+    const trimmed = value.trim();
+    if (trimmed.startsWith("+")) {
+      return `+${trimmed.slice(1).replace(/[^\d]/g, "")}`;
+    }
+    const digits = trimmed.replace(/[^\d]/g, "");
+    if (!digits) return "";
+    if (digits.startsWith("44")) return `+${digits}`;
+    if (digits.startsWith("0")) return `+44${digits.slice(1)}`;
+    return `+${digits}`;
+  };
+
+  const setContactEmail = (emailValue) => {
+    const wrappers = document.querySelectorAll("[data-contact-email-wrap]");
     wrappers.forEach((wrapper) => {
-      const link = wrapper.querySelector(linkSelector);
+      const link = wrapper.querySelector("[data-contact-email-link]");
       if (!link) return;
-      if (isNonEmptyString(value)) {
-        const cleanValue = value.trim();
+      if (isNonEmptyString(emailValue)) {
+        const cleanValue = emailValue.trim();
         link.textContent = cleanValue;
-        link.setAttribute("href", `${protocol}${cleanValue}`);
+        link.setAttribute("href", `mailto:${cleanValue}`);
         wrapper.classList.remove("hidden");
       } else {
         wrapper.classList.add("hidden");
       }
     });
+  };
+
+  const setContactPhone = (displayValue, telValue) => {
+    const wrappers = document.querySelectorAll("[data-contact-phone-wrap]");
+    wrappers.forEach((wrapper) => {
+      const link = wrapper.querySelector("[data-contact-phone-link]");
+      if (!link) return;
+
+      const display = isNonEmptyString(displayValue) ? displayValue.trim() : "";
+      const tel = isNonEmptyString(telValue) ? telValue.trim() : normalisePhoneForTel(display);
+
+      if (display && tel) {
+        link.textContent = display;
+        link.setAttribute("href", `tel:${tel}`);
+        wrapper.classList.remove("hidden");
+      } else {
+        wrapper.classList.add("hidden");
+      }
+    });
+  };
+
+  const getSocialConfig = () => {
+    const nested = config.social && typeof config.social === "object" ? config.social : {};
+    return {
+      instagramUrl: isNonEmptyString(nested.instagramUrl) ? nested.instagramUrl : config.instagramUrl,
+      facebookUrl: isNonEmptyString(nested.facebookUrl) ? nested.facebookUrl : config.facebookUrl,
+      tiktokUrl: isNonEmptyString(nested.tiktokUrl) ? nested.tiktokUrl : config.tiktokUrl,
+      instagramEmbedPosts: Array.isArray(nested.instagramEmbedPosts) ? nested.instagramEmbedPosts : []
+    };
   };
 
   const applyConfig = () => {
@@ -97,7 +139,7 @@
       }
     });
 
-    const social = config.social || {};
+    const social = getSocialConfig();
     setLink('[data-social-link="instagram"]', social.instagramUrl, "#");
     setLink('[data-social-link="facebook"]', social.facebookUrl, "#");
     setLink('[data-social-link="tiktok"]', social.tiktokUrl, "");
@@ -112,8 +154,20 @@
       }
     });
 
-    setOptionalLinkGroup("[data-contact-email-wrap]", "[data-contact-email-link]", config.contactEmail, "mailto:");
-    setOptionalLinkGroup("[data-contact-phone-wrap]", "[data-contact-phone-link]", config.contactPhone, "tel:");
+    const emailValue = isNonEmptyString(config.email)
+      ? config.email
+      : config.contactEmail;
+
+    const phoneDisplayValue = isNonEmptyString(config.phoneDisplay)
+      ? config.phoneDisplay
+      : config.contactPhone;
+
+    const phoneTelValue = isNonEmptyString(config.phoneTel)
+      ? config.phoneTel
+      : normalisePhoneForTel(phoneDisplayValue);
+
+    setContactEmail(emailValue);
+    setContactPhone(phoneDisplayValue, phoneTelValue);
 
     setOptionalText("[data-location-text]", config.locationText, "Serving clients across the local area.");
 
@@ -267,10 +321,22 @@
     document.querySelectorAll(selector).forEach((group) => {
       const details = Array.from(group.children).filter((node) => node.tagName === "DETAILS");
       details.forEach((item) => {
-        item.addEventListener("toggle", () => {
-          if (!item.open) return;
+        const summary = item.querySelector(":scope > summary");
+        if (!summary) return;
+
+        summary.addEventListener("click", () => {
+          const isOpening = !item.open;
+          if (!isOpening) return;
+
+          const previousScrollY = window.scrollY;
           details.forEach((other) => {
             if (other !== item) other.open = false;
+          });
+
+          window.requestAnimationFrame(() => {
+            if (Math.abs(window.scrollY - previousScrollY) > 1) {
+              window.scrollTo({ top: previousScrollY, left: window.scrollX, behavior: "auto" });
+            }
           });
         });
       });
@@ -480,13 +546,11 @@
 
   const selectReviews = (reviews, viewKey, limit) => {
     if (viewKey === "nails") {
-      const preferred = getPreferred(reviews, ["Nails", "Both"]);
-      return [...preferred, ...reviews.filter((item) => !preferred.includes(item))].slice(0, limit);
+      return getPreferred(reviews, ["Nails", "Both"]).slice(0, limit);
     }
 
     if (viewKey === "jewellery") {
-      const preferred = getPreferred(reviews, ["Permanent Jewellery", "Both"]);
-      return [...preferred, ...reviews.filter((item) => !preferred.includes(item))].slice(0, limit);
+      return getPreferred(reviews, ["Permanent Jewellery", "Both"]).slice(0, limit);
     }
 
     return pickForHome(reviews, limit);
@@ -512,7 +576,7 @@
         }
         <div class="review-meta">
           <span><strong>${escapeHtml(review.name || "Client")}</strong> &middot; ${escapeHtml(dateText)}</span>
-          <span class="review-source">Google review</span>
+          <span class="review-source">${escapeHtml(review.source || "Client feedback")}</span>
         </div>
       </article>
     `;
@@ -601,6 +665,7 @@
   };
 
   let instagramScriptPromise;
+  let tiktokScriptPromise;
 
   const loadInstagramScript = () => {
     if (window.instgrm && window.instgrm.Embeds) {
@@ -634,7 +699,59 @@
     return instagramScriptPromise;
   };
 
+  const loadTikTokScript = () => {
+    if (window.tiktokEmbedLoaded === true) {
+      return Promise.resolve();
+    }
+
+    if (tiktokScriptPromise) {
+      return tiktokScriptPromise;
+    }
+
+    tiktokScriptPromise = new Promise((resolve, reject) => {
+      const existing = document.getElementById("tiktok-embed-script");
+      if (existing) {
+        existing.addEventListener(
+          "load",
+          () => {
+            window.tiktokEmbedLoaded = true;
+            resolve();
+          },
+          { once: true }
+        );
+        existing.addEventListener("error", () => reject(new Error("TikTok script failed")), {
+          once: true
+        });
+        return;
+      }
+
+      const script = document.createElement("script");
+      script.id = "tiktok-embed-script";
+      script.src = "https://www.tiktok.com/embed.js";
+      script.async = true;
+      script.onload = () => {
+        window.tiktokEmbedLoaded = true;
+        resolve();
+      };
+      script.onerror = () => reject(new Error("TikTok script failed"));
+      document.body.appendChild(script);
+    });
+
+    return tiktokScriptPromise;
+  };
+
   const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+  const extractTikTokHandle = (urlValue) => {
+    if (!isValidUrl(urlValue)) return "";
+    try {
+      const pathname = new URL(urlValue).pathname || "";
+      const match = pathname.match(/@([A-Za-z0-9._-]+)/);
+      return match ? match[1] : "";
+    } catch (error) {
+      return "";
+    }
+  };
 
   const initSocialEmbeds = () => {
     const sections = Array.from(document.querySelectorAll("[data-social-embed]"));
@@ -660,56 +777,99 @@
     const embedContent = section.querySelector("[data-embed-content]");
     const fallback = section.querySelector("[data-embed-fallback]");
     const status = section.querySelector("[data-embed-status]");
+    const tiktokContent = section.querySelector("[data-tiktok-content]");
+    const tiktokStatus = section.querySelector("[data-tiktok-status]");
 
     if (!embedContent || !fallback || !status) return;
 
-    const social = config.social || {};
+    const social = getSocialConfig();
     const instagramUrl = social.instagramUrl;
-    const posts = Array.isArray(social.instagramEmbedPosts)
-      ? social.instagramEmbedPosts.filter((item) => isValidUrl(item)).slice(0, 3)
-      : [];
+    const tiktokUrl = social.tiktokUrl;
+    const posts = social.instagramEmbedPosts
+      .filter((item) => isValidUrl(item))
+      .slice(0, 3);
+
+    let instagramReady = false;
+    let tiktokReady = !tiktokContent || !tiktokStatus;
 
     if (!isValidUrl(instagramUrl)) {
-      fallback.classList.remove("hidden");
       status.textContent = "Add your Instagram link in site-config.js to enable embeds.";
-      return;
-    }
-
-    if (!posts.length) {
-      fallback.classList.remove("hidden");
+    } else if (!posts.length) {
       status.textContent = "Add Instagram post URLs in site-config.js to show live embeds.";
-      return;
+    } else {
+      embedContent.innerHTML = posts
+        .map(
+          (url) => `
+            <blockquote class="instagram-media" data-instgrm-permalink="${escapeHtml(
+              `${url}?utm_source=ig_embed&utm_campaign=loading`
+            )}" data-instgrm-version="14" style="margin:0 auto 1rem; max-width:540px; width:100%;"></blockquote>
+          `
+        )
+        .join("");
+
+      try {
+        await loadInstagramScript();
+        if (
+          window.instgrm &&
+          window.instgrm.Embeds &&
+          typeof window.instgrm.Embeds.process === "function"
+        ) {
+          window.instgrm.Embeds.process();
+        }
+
+        await wait(2800);
+        const hasIframe = embedContent.querySelector("iframe") !== null;
+
+        if (hasIframe) {
+          instagramReady = true;
+          status.textContent = "Latest posts from Instagram.";
+        } else {
+          status.textContent = "Instagram embed is blocked in this browser, showing fallback content.";
+        }
+      } catch (error) {
+        status.textContent = "Instagram embed is unavailable right now, showing fallback content.";
+      }
     }
 
-    embedContent.innerHTML = posts
-      .map(
-        (url) => `
-          <blockquote class="instagram-media" data-instgrm-permalink="${escapeHtml(
-            `${url}?utm_source=ig_embed&utm_campaign=loading`
-          )}" data-instgrm-version="14" style="margin:0 auto 1rem; max-width:540px; width:100%;"></blockquote>
-        `
-      )
-      .join("");
-
-    try {
-      await loadInstagramScript();
-      if (window.instgrm && window.instgrm.Embeds && typeof window.instgrm.Embeds.process === "function") {
-        window.instgrm.Embeds.process();
-      }
-
-      await wait(2800);
-      const hasIframe = embedContent.querySelector("iframe") !== null;
-
-      if (hasIframe) {
-        fallback.classList.add("hidden");
-        status.textContent = "Latest posts from Instagram.";
+    if (tiktokContent && tiktokStatus) {
+      if (!isValidUrl(tiktokUrl)) {
+        tiktokStatus.textContent = "Add your TikTok link in site-config.js to enable the embed.";
       } else {
-        fallback.classList.remove("hidden");
-        status.textContent = "Instagram embed is blocked in this browser, showing fallback gallery instead.";
+        const handle = extractTikTokHandle(tiktokUrl) || "elysium_by_georgierose";
+        tiktokContent.innerHTML = `
+          <blockquote class="tiktok-embed" cite="${escapeHtml(
+            tiktokUrl
+          )}" data-unique-id="${escapeHtml(
+            handle
+          )}" data-embed-type="creator" style="margin:0; max-width:780px; min-width:260px;">
+            <section>
+              <a target="_blank" rel="noreferrer noopener" href="${escapeHtml(
+                tiktokUrl
+              )}">@${escapeHtml(handle)}</a>
+            </section>
+          </blockquote>
+        `;
+
+        try {
+          await loadTikTokScript();
+          await wait(2400);
+          const hasTikTokFrame = tiktokContent.querySelector("iframe") !== null;
+          if (hasTikTokFrame) {
+            tiktokReady = true;
+            tiktokStatus.textContent = "Latest posts from TikTok.";
+          } else {
+            tiktokStatus.textContent = "TikTok embed is blocked in this browser, showing fallback content.";
+          }
+        } catch (error) {
+          tiktokStatus.textContent = "TikTok embed is unavailable right now, showing fallback content.";
+        }
       }
-    } catch (error) {
+    }
+
+    if (instagramReady && tiktokReady) {
+      fallback.classList.add("hidden");
+    } else {
       fallback.classList.remove("hidden");
-      status.textContent = "Instagram embed is unavailable right now, showing fallback gallery instead.";
     }
   };
 
