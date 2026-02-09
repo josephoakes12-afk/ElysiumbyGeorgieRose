@@ -1,0 +1,11 @@
+{
+  "name": "elysium-by-georgie-rose",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "images:build": "node scripts/optimize-images.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.1"
+  }
+}

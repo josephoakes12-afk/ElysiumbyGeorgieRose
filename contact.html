@@ -81,7 +81,7 @@
           <div class="contact-list">
             <div class="contact-item" data-contact-email-wrap>
               <strong>Email</strong>
-              <a data-contact-email-link href="mailto:Elysium.pj@gmail.com">Elysium.pj@gmail.com</a>
+              <a data-contact-email-link href="mailto:Elysium.pj@gmail.com?subject=Enquiry%20from%20website&amp;body=Hi%20Georgie%2C%0A%0AI%27m%20getting%20in%20touch%20about...">Elysium.pj@gmail.com</a>
             </div>
             <div class="contact-item" data-contact-phone-wrap>
               <strong>Phone</strong>
@@ -124,28 +124,30 @@
           </div>
 
           <form class="form-fields" data-form-type="enquiry" action="https://formspree.io/f/xvzbgojb" method="POST" novalidate>
+            <div class="form-error-summary hidden" data-form-error-summary role="alert" aria-live="polite" aria-atomic="true" tabindex="-1"></div>
+
             <div class="field">
               <label for="contact-name">Full name (required)</label>
-              <input id="contact-name" name="name" type="text" autocomplete="name" required data-validate-field data-required-message="Enter your full name." aria-describedby="contact-name-error">
+              <input id="contact-name" name="name" type="text" autocomplete="name" required data-validate-field data-required-message="Enter your full name." aria-describedby="contact-name-error" aria-errormessage="contact-name-error">
               <p class="field-error" id="contact-name-error" data-field-error-for="contact-name" aria-live="polite"></p>
             </div>
 
             <div class="field">
               <label for="contact-email">Email address (required)</label>
-              <input id="contact-email" name="email" type="email" autocomplete="email" required data-validate-field data-required-message="Enter your email address." aria-describedby="contact-email-error">
+              <input id="contact-email" name="email" type="email" autocomplete="email" required data-validate-field data-required-message="Enter your email address." aria-describedby="contact-email-error" aria-errormessage="contact-email-error">
               <p class="field-error" id="contact-email-error" data-field-error-for="contact-email" aria-live="polite"></p>
             </div>
 
             <div class="field">
               <label for="contact-phone">Phone number (optional)</label>
-              <input id="contact-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" data-validate-field aria-describedby="contact-phone-hint contact-phone-error">
+              <input id="contact-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" data-validate-field aria-describedby="contact-phone-hint contact-phone-error" aria-errormessage="contact-phone-error">
               <p class="field-help" id="contact-phone-hint">Add a mobile number if you prefer replies by phone.</p>
               <p class="field-error" id="contact-phone-error" data-field-error-for="contact-phone" aria-live="polite"></p>
             </div>
 
             <div class="field">
               <label for="contact-service">Service interest (required)</label>
-              <select id="contact-service" name="service" required data-validate-field data-required-message="Select the service you want to book." aria-describedby="contact-service-error">
+              <select id="contact-service" name="service" required data-validate-field data-required-message="Select the service you want to book." aria-describedby="contact-service-error" aria-errormessage="contact-service-error">
                 <option value="">Select a service</option>
                 <option value="BIAB">BIAB</option>
                 <option value="Gel polish">Gel polish</option>
@@ -159,14 +161,14 @@
 
             <div class="field">
               <label for="contact-date">Preferred date or timeframe (required)</label>
-              <input id="contact-date" name="preferred_date" type="text" placeholder="Example: Late March, weekday evening" required data-validate-field data-required-message="Share your preferred date or timeframe." aria-describedby="contact-date-hint contact-date-error">
+              <input id="contact-date" name="preferred_date" type="text" placeholder="Example: Late March, weekday evening" required data-validate-field data-required-message="Share your preferred date or timeframe." aria-describedby="contact-date-hint contact-date-error" aria-errormessage="contact-date-error">
               <p class="field-help" id="contact-date-hint">Include ideal days or times to speed up scheduling.</p>
               <p class="field-error" id="contact-date-error" data-field-error-for="contact-date" aria-live="polite"></p>
             </div>
 
             <div class="field">
               <label for="contact-message">Your message (required)</label>
-              <textarea id="contact-message" name="message" placeholder="Tell us what you would like to book." required data-validate-field data-required-message="Add a short message about your booking request." aria-describedby="contact-message-hint contact-message-error"></textarea>
+              <textarea id="contact-message" name="message" placeholder="Tell us what you would like to book." required data-validate-field data-required-message="Add a short message about your booking request." aria-describedby="contact-message-hint contact-message-error" aria-errormessage="contact-message-error"></textarea>
               <p class="field-help" id="contact-message-hint">Please do not include sensitive personal or payment information.</p>
               <p class="field-error" id="contact-message-error" data-field-error-for="contact-message" aria-live="polite"></p>
             </div>
@@ -225,7 +227,7 @@
         <a data-social-link="instagram" href="https://www.instagram.com/elysium_by_georgierose/">Instagram</a>
         <a data-social-link="facebook" href="https://www.facebook.com/profile.php?id=61571925904476">Facebook</a>
         <a data-social-link="tiktok" href="https://www.tiktok.com/@elysium_by_georgierose?is_from_webapp=1&amp;sender_device=pc">TikTok</a>
-        <span data-contact-email-wrap>Email: <a data-contact-email-link href="mailto:Elysium.pj@gmail.com">Elysium.pj@gmail.com</a></span>
+        <span data-contact-email-wrap>Email: <a data-contact-email-link href="mailto:Elysium.pj@gmail.com?subject=Enquiry%20from%20website&amp;body=Hi%20Georgie%2C%0A%0AI%27m%20getting%20in%20touch%20about...">Elysium.pj@gmail.com</a></span>
         <span data-contact-phone-wrap>Phone: <a data-contact-phone-link href="tel:+447361497192">07361 497192</a></span>
       </div>
     </div>
