@@ -23,7 +23,7 @@ const ROOT_DIR = process.cwd();
 const SOURCE_DIR = path.join(ROOT_DIR, "assets", "images");
 const OUTPUT_DIR = path.join(SOURCE_DIR, "optimized");
 
-const WIDTHS = [320, 480, 768, 1024, 1400];
+const WIDTHS = [320, 480, 768, 1024, 1440];
 const SUPPORTED_EXTENSIONS = new Set([".jpg", ".jpeg", ".png"]);
 
 const JPG_QUALITY = 80;

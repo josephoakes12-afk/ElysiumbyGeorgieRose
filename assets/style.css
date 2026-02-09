@@ -313,7 +313,8 @@ h4 {
 .nav-shell {
   position: relative;
   justify-self: center;
-  width: min(100%, 640px);
+  width: 100%;
+  max-width: 640px;
 }
 
 .nav-toggle {
@@ -504,6 +505,9 @@ h4 {
 .hero-visual {
   position: relative;
   isolation: isolate;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .hero-collage {
@@ -512,10 +516,15 @@ h4 {
   gap: var(--space-3);
   min-height: 360px;
   border-radius: var(--radius-lg);
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .hero-collage img {
+  display: block;
   width: 100%;
+  max-width: 100%;
   height: 100%;
   border-radius: var(--radius-md);
   object-fit: cover;
@@ -1431,6 +1440,13 @@ textarea {
   right: 0;
 }
 
+.lightbox-close:focus-visible,
+.lightbox-nav:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--card), white 60%);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent), black 12%);
+}
+
 .lightbox-nav.prev {
   left: -56px;
   top: 50%;
@@ -1494,7 +1510,8 @@ hr.section-rule {
     position: fixed;
     right: 1rem;
     top: 74px;
-    width: min(300px, calc(100vw - 2rem));
+    width: 100%;
+    max-width: min(20rem, calc(100% - 2rem));
     background: color-mix(in srgb, var(--card), white 26%);
     border: 1px solid color-mix(in srgb, var(--border), transparent 12%);
     border-radius: var(--radius-md);
@@ -1633,6 +1650,7 @@ hr.section-rule {
   .hero-collage {
     max-width: 100%;
     min-width: 0;
+    overflow: hidden;
   }
 
   .hero-collage {
@@ -1640,9 +1658,16 @@ hr.section-rule {
     min-height: auto;
   }
 
+  .hero-collage > * {
+    transform: none;
+  }
+
   .hero-collage img,
   .hero-collage > :first-child img,
   .hero-collage > :last-child img {
+    display: block;
+    max-width: 100%;
+    height: auto;
     transform: none;
   }
 }

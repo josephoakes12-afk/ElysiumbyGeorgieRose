@@ -355,11 +355,28 @@
     return true;
   };
 
-  const applyResponsiveSet = (img, sizesValue) => {
-    if (!img || !isNonEmptyString(img.getAttribute("src")) || img.hasAttribute("srcset")) return;
-    const source = img.getAttribute("src");
-    img.setAttribute("srcset", `${source} 480w, ${source} 960w, ${source} 1440w`);
-    img.setAttribute("sizes", sizesValue);
+  const removeMisleadingSrcSet = (img) => {
+    if (!img) return;
+    const srcset = img.getAttribute("srcset");
+    if (!isNonEmptyString(srcset)) return;
+
+    const srcCandidates = srcset
+      .split(",")
+      .map((entry) => entry.trim().split(/\s+/)[0] || "")
+      .filter((entry) => isNonEmptyString(entry));
+
+    if (!srcCandidates.length) return;
+
+    const normalisedCandidates = srcCandidates
+      .map((entry) => normaliseAssetPath(entry))
+      .filter((entry) => isNonEmptyString(entry));
+
+    if (!normalisedCandidates.length) return;
+
+    if (new Set(normalisedCandidates).size <= 1) {
+      img.removeAttribute("srcset");
+      img.removeAttribute("sizes");
+    }
   };
 
   const initProgressiveImages = async () => {
@@ -372,6 +389,7 @@
       const inHero = Boolean(img.closest(".hero"));
       const isBrand = img.classList.contains("brand-mark");
       const isPrimaryHeroImage = img === primaryHeroImage;
+      removeMisleadingSrcSet(img);
 
       if (!img.hasAttribute("decoding")) {
         img.setAttribute("decoding", "async");
@@ -405,10 +423,7 @@
 
       if (sizeRule) {
         const manifestEntry = getManifestEntryForSource(optimisedManifest, img.getAttribute("src") || "");
-        const didApplyOptimised = applyOptimisedImageSources(img, manifestEntry, sizeRule);
-        if (!didApplyOptimised) {
-          applyResponsiveSet(img, sizeRule);
-        }
+        applyOptimisedImageSources(img, manifestEntry, sizeRule);
       }
 
       if (isBrand || img.classList.contains("lightbox-image")) return;
@@ -657,10 +672,12 @@
     lightbox.setAttribute("role", "dialog");
     lightbox.setAttribute("aria-modal", "true");
     lightbox.setAttribute("aria-label", "Image preview");
+    lightbox.setAttribute("aria-hidden", "true");
+    lightbox.setAttribute("tabindex", "-1");
 
     lightbox.innerHTML = `
       <div class="lightbox-frame">
-        <button type="button" class="lightbox-close" aria-label="Close image">x</button>
+        <button type="button" class="lightbox-close" aria-label="Close image preview">&times;</button>
         <button type="button" class="lightbox-nav prev" aria-label="Previous image"><</button>
         <img class="lightbox-image" src="" alt="">
         <button type="button" class="lightbox-nav next" aria-label="Next image">></button>
@@ -677,6 +694,39 @@
     let activeIndex = 0;
     let isOpen = false;
     let lastFocused = null;
+    let openingTrigger = null;
+
+    const isFocusableVisible = (node) => {
+      if (!node) return false;
+      const style = window.getComputedStyle(node);
+      return style.display !== "none" && style.visibility !== "hidden";
+    };
+
+    const getFocusableInLightbox = () =>
+      Array.from(lightbox.querySelectorAll('button:not([disabled]), [href], [tabindex]:not([tabindex="-1"])'))
+        .filter((node) => isFocusableVisible(node));
+
+    const trapLightboxFocus = (event) => {
+      if (event.key !== "Tab") return;
+
+      const focusable = getFocusableInLightbox();
+      if (!focusable.length) {
+        event.preventDefault();
+        closeBtn.focus();
+        return;
+      }
+
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    };
 
     const updateImage = () => {
       const item = items[activeIndex];
@@ -685,23 +735,29 @@
       img.setAttribute("alt", item.alt);
     };
 
-    const open = (index) => {
+    const open = (index, triggerElement) => {
       activeIndex = index;
-      lastFocused = document.activeElement;
+      openingTrigger = triggerElement || null;
+      lastFocused = triggerElement || document.activeElement;
       updateImage();
       lightbox.classList.add("is-open");
+      lightbox.setAttribute("aria-hidden", "false");
       isOpen = true;
       document.body.classList.add("menu-open");
       closeBtn.focus();
     };
 
     const close = () => {
+      if (!isOpen) return;
       lightbox.classList.remove("is-open");
+      lightbox.setAttribute("aria-hidden", "true");
       isOpen = false;
       document.body.classList.remove("menu-open");
-      if (lastFocused && typeof lastFocused.focus === "function") {
-        lastFocused.focus();
+      const focusTarget = openingTrigger || lastFocused;
+      if (focusTarget && typeof focusTarget.focus === "function") {
+        focusTarget.focus();
       }
+      openingTrigger = null;
     };
 
     const move = (direction) => {
@@ -715,7 +771,7 @@
 
       triggerElement.addEventListener("click", (event) => {
         if (isAnchor) event.preventDefault();
-        open(index);
+        open(index, triggerElement);
       });
     });
 
@@ -731,6 +787,10 @@
 
     document.addEventListener("keydown", (event) => {
       if (!isOpen) return;
+      if (event.key === "Tab") {
+        trapLightboxFocus(event);
+        return;
+      }
       if (event.key === "Escape") {
         event.preventDefault();
         close();
