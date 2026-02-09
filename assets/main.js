@@ -1,4 +1,4 @@
-﻿(() => {
+(() => {
   const ready = (fn) => {
     if (document.readyState !== "loading") {
       fn();
@@ -192,6 +192,126 @@
     }
   };
 
+  const applyResponsiveSet = (img, sizesValue) => {
+    if (!img || !isNonEmptyString(img.getAttribute("src")) || img.hasAttribute("srcset")) return;
+    const source = img.getAttribute("src");
+    img.setAttribute("srcset", `${source} 480w, ${source} 960w, ${source} 1440w`);
+    img.setAttribute("sizes", sizesValue);
+  };
+
+  const initProgressiveImages = () => {
+    const images = Array.from(document.querySelectorAll("img"));
+    if (!images.length) return;
+
+    images.forEach((img) => {
+      const inHero = Boolean(img.closest(".hero"));
+      const isBrand = img.classList.contains("brand-mark");
+
+      if (!img.hasAttribute("decoding")) {
+        img.setAttribute("decoding", "async");
+      }
+
+      if (!img.hasAttribute("loading")) {
+        img.setAttribute("loading", inHero ? "eager" : "lazy");
+      }
+
+      if (inHero && !img.hasAttribute("fetchpriority") && !isBrand) {
+        img.setAttribute("fetchpriority", "high");
+      }
+
+      if (img.matches(".hero-collage img")) {
+        applyResponsiveSet(
+          img,
+          "(max-width: 760px) 46vw, (max-width: 1080px) 50vw, 32vw"
+        );
+      } else if (img.matches(".gallery-tile img, .image-card img")) {
+        applyResponsiveSet(
+          img,
+          "(max-width: 520px) 100vw, (max-width: 760px) 50vw, (max-width: 1200px) 33vw, 280px"
+        );
+      } else if (img.matches(".social-preview-grid img")) {
+        applyResponsiveSet(img, "(max-width: 760px) 30vw, 124px");
+      } else if (img.matches(".path-card img, .about-photo")) {
+        applyResponsiveSet(img, "(max-width: 960px) 100vw, 44vw");
+      }
+
+      if (isBrand || img.classList.contains("lightbox-image")) return;
+
+      img.classList.add("img-fade", "img-skeleton");
+
+      const markLoaded = () => {
+        img.classList.add("is-loaded");
+        img.classList.remove("img-skeleton");
+      };
+
+      if (img.complete) {
+        markLoaded();
+      } else {
+        img.addEventListener("load", markLoaded, { once: true });
+        img.addEventListener("error", () => img.classList.remove("img-skeleton"), { once: true });
+      }
+    });
+  };
+
+  const normaliseImageLabel = (source) => {
+    if (!isNonEmptyString(source)) return "";
+    try {
+      const fileName = decodeURIComponent(source.split("/").pop() || "");
+      return fileName
+        .replace(/\.[a-z0-9]+$/i, "")
+        .replace(/\b(pt|part)\s*\d+\b/gi, "")
+        .replace(/[_-]+/g, " ")
+        .replace(/\s+/g, " ")
+        .trim()
+        .toLowerCase();
+    } catch (error) {
+      return "";
+    }
+  };
+
+  const inferGalleryAlt = (source) => {
+    if (!isNonEmptyString(source)) return "";
+    const label = normaliseImageLabel(source);
+    if (!label) return "";
+
+    if (source.includes("/Nails/")) {
+      return `Nail set - ${label || "photo"}`;
+    }
+
+    if (source.includes("/Jewellery/")) {
+      let type = "piece";
+      if (label.includes("bracelet")) type = "bracelet";
+      if (label.includes("anklet")) type = "anklet";
+      if (label.includes("ring")) type = "ring";
+
+      const feature = label
+        .replace(/\b(permanent|welding|welded|bracelet|anklet|ring)\b/gi, "")
+        .replace(/\s+/g, " ")
+        .trim();
+
+      return `Permanent jewellery - ${type}, ${feature || "feature detail"}`;
+    }
+
+    return "";
+  };
+
+  const initGalleryAltText = () => {
+    document.querySelectorAll("[data-lightbox]").forEach((trigger) => {
+      const imageNode = trigger.querySelector("img");
+      const source =
+        trigger.getAttribute("data-lightbox") ||
+        (imageNode ? imageNode.getAttribute("src") : "");
+
+      const alt = inferGalleryAlt(source || "");
+      if (!isNonEmptyString(alt)) return;
+
+      trigger.setAttribute("data-alt", alt);
+      if (imageNode) {
+        imageNode.setAttribute("alt", alt);
+      }
+    });
+  };
+
   const initYear = () => {
     document.querySelectorAll("[data-year]").forEach((node) => {
       node.textContent = String(new Date().getFullYear());
@@ -321,22 +441,10 @@
     document.querySelectorAll(selector).forEach((group) => {
       const details = Array.from(group.children).filter((node) => node.tagName === "DETAILS");
       details.forEach((item) => {
-        const summary = item.querySelector(":scope > summary");
-        if (!summary) return;
-
-        summary.addEventListener("click", () => {
-          const isOpening = !item.open;
-          if (!isOpening) return;
-
-          const previousScrollY = window.scrollY;
+        item.addEventListener("toggle", () => {
+          if (!item.open) return;
           details.forEach((other) => {
             if (other !== item) other.open = false;
-          });
-
-          window.requestAnimationFrame(() => {
-            if (Math.abs(window.scrollY - previousScrollY) > 1) {
-              window.scrollTo({ top: previousScrollY, left: window.scrollX, behavior: "auto" });
-            }
           });
         });
       });
@@ -476,38 +584,140 @@
       if (!buttons.length || !grid) return;
 
       const tiles = Array.from(grid.querySelectorAll("[data-gallery-item]"));
-      const countNode = document.querySelector("[data-gallery-count]");
+      const countNode = wrapper.querySelector("[data-gallery-count]");
+      const loadMoreButton = wrapper.querySelector("[data-gallery-load-more]");
+      const pageSize = Number(wrapper.getAttribute("data-gallery-page-size")) || 12;
+      const loadedByFilter = {};
 
-      const setFilter = (filterValue) => {
-        let visibleCount = 0;
+      const primeTileImage = (tile) => {
+        const img = tile.querySelector("img");
+        if (!img || img.dataset.lazyPrimed === "true") return;
+        const currentSrc = img.getAttribute("src");
+        const currentSrcset = img.getAttribute("srcset");
+
+        if (isNonEmptyString(currentSrc)) {
+          img.dataset.src = currentSrc;
+          img.removeAttribute("src");
+        }
+
+        if (isNonEmptyString(currentSrcset)) {
+          img.dataset.srcset = currentSrcset;
+          img.removeAttribute("srcset");
+        }
+
+        img.dataset.lazyPrimed = "true";
+      };
+
+      const loadTileImage = (tile) => {
+        const img = tile.querySelector("img");
+        if (!img || img.getAttribute("src")) return;
+
+        const source = img.dataset.src;
+        if (!isNonEmptyString(source)) return;
+
+        img.setAttribute("src", source);
+        if (isNonEmptyString(img.dataset.srcset)) {
+          img.setAttribute("srcset", img.dataset.srcset);
+        }
+
+        if (!img.classList.contains("img-fade")) {
+          img.classList.add("img-fade", "img-skeleton");
+        }
+
+        const markLoaded = () => {
+          img.classList.add("is-loaded");
+          img.classList.remove("img-skeleton");
+        };
+
+        if (img.complete) {
+          markLoaded();
+        } else {
+          img.addEventListener("load", markLoaded, { once: true });
+          img.addEventListener("error", () => img.classList.remove("img-skeleton"), { once: true });
+        }
+      };
+
+      const getMatchingTiles = (filterValue) =>
+        tiles.filter((tile) => {
+          const category = tile.getAttribute("data-category") || "";
+          return filterValue === "all" || category === filterValue;
+        });
+
+      tiles.forEach((tile) => {
+        primeTileImage(tile);
+      });
+
+      buttons.forEach((button) => {
+        const key = button.getAttribute("data-filter-btn") || "all";
+        if (!loadedByFilter[key]) {
+          loadedByFilter[key] = pageSize;
+        }
+      });
+
+      let activeFilter =
+        buttons.find((btn) => btn.getAttribute("aria-pressed") === "true")?.getAttribute("data-filter-btn") ||
+        "all";
+
+      const updateView = () => {
+        const matching = getMatchingTiles(activeFilter);
+        const totalMatching = matching.length;
+        const limit = Math.min(loadedByFilter[activeFilter] || pageSize, totalMatching);
+        loadedByFilter[activeFilter] = limit || pageSize;
+        const visibleSet = new Set(matching.slice(0, limit));
 
         buttons.forEach((button) => {
           button.setAttribute(
-            "aria-selected",
-            String(button.getAttribute("data-filter-btn") === filterValue)
+            "aria-pressed",
+            String((button.getAttribute("data-filter-btn") || "all") === activeFilter)
           );
         });
 
         tiles.forEach((tile) => {
-          const category = tile.getAttribute("data-category") || "";
-          const matches = filterValue === "all" || category === filterValue;
-          tile.hidden = !matches;
-          if (matches) visibleCount += 1;
+          const isVisible = visibleSet.has(tile);
+          tile.hidden = !isVisible;
+          if (isVisible) {
+            loadTileImage(tile);
+          }
         });
 
         if (countNode) {
-          countNode.textContent = `${visibleCount} pieces shown`;
+          countNode.textContent = `${visibleSet.size} of ${totalMatching} pieces shown`;
+        }
+
+        if (loadMoreButton) {
+          const hasMore = limit < totalMatching;
+          loadMoreButton.hidden = !hasMore;
+          loadMoreButton.setAttribute("aria-hidden", String(!hasMore));
         }
       };
 
       buttons.forEach((button) => {
-        button.addEventListener("click", () => {
-          setFilter(button.getAttribute("data-filter-btn") || "all");
+        const activateFilter = () => {
+          const nextFilter = button.getAttribute("data-filter-btn") || "all";
+          activeFilter = nextFilter;
+          updateView();
+        };
+
+        button.addEventListener("click", activateFilter);
+        button.addEventListener("keydown", (event) => {
+          if (event.key !== " " && event.key !== "Spacebar") return;
+          event.preventDefault();
+          activateFilter();
         });
       });
 
-      const initial = buttons.find((btn) => btn.getAttribute("aria-selected") === "true");
-      setFilter(initial ? initial.getAttribute("data-filter-btn") : "all");
+      if (loadMoreButton) {
+        loadMoreButton.addEventListener("click", () => {
+          const matching = getMatchingTiles(activeFilter);
+          loadedByFilter[activeFilter] = Math.min(
+            (loadedByFilter[activeFilter] || pageSize) + pageSize,
+            matching.length
+          );
+          updateView();
+        });
+      }
+
+      updateView();
     });
   };
 
@@ -753,16 +963,356 @@
     }
   };
 
+  const socialState = new WeakMap();
+
+  const getSocialSectionState = (section) => {
+    if (!socialState.has(section)) {
+      socialState.set(section, {
+        instagramLoading: false,
+        instagramLoaded: false,
+        instagramInteracted: false,
+        tiktokLoading: false,
+        tiktokLoaded: false,
+        tiktokInteracted: false
+      });
+    }
+    return socialState.get(section);
+  };
+
+  const setStatus = (node, message, tone = "info") => {
+    if (!node) return;
+    if (!isNonEmptyString(message)) {
+      node.textContent = "";
+      node.classList.add("hidden");
+      node.removeAttribute("data-tone");
+      return;
+    }
+
+    node.textContent = message;
+    node.setAttribute("data-tone", tone);
+    node.classList.remove("hidden");
+  };
+
+  const setPanelOpen = (panel, trigger, isOpen, openLabel, closeLabel) => {
+    if (panel) {
+      panel.classList.toggle("hidden", !isOpen);
+    }
+
+    if (trigger) {
+      trigger.setAttribute("aria-expanded", String(isOpen));
+      trigger.textContent = isOpen ? closeLabel : openLabel;
+    }
+  };
+
+  const syncInstagramButtonState = (section) => {
+    const panel = section.querySelector('[data-social-panel="instagram"]');
+    const trigger = section.querySelector('[data-load-social="instagram"]');
+    if (!trigger) return;
+
+    const isOpen = panel ? !panel.classList.contains("hidden") : false;
+    trigger.textContent = isOpen ? "Hide latest posts" : "Show latest posts";
+    trigger.setAttribute("aria-expanded", String(isOpen));
+  };
+
+  const syncTikTokButtonState = (section) => {
+    const state = getSocialSectionState(section);
+    const panel = section.querySelector('[data-social-panel="tiktok"]');
+    const trigger = section.querySelector('[data-load-social="tiktok"]');
+    if (!trigger) return;
+
+    const isOpen = panel ? !panel.classList.contains("hidden") : false;
+    const collapsedLabel = state.tiktokLoaded ? "Show TikTok feed" : "Load TikTok feed";
+    trigger.textContent = isOpen ? "Hide TikTok feed" : collapsedLabel;
+    trigger.setAttribute("aria-expanded", String(isOpen));
+  };
+
+  const loadInstagramEmbeds = async (section, options = {}) => {
+    const state = getSocialSectionState(section);
+    const auto = Boolean(options.auto);
+
+    const embedContent = section.querySelector("[data-embed-content]");
+    const status = section.querySelector("[data-embed-status]");
+    const panel = section.querySelector('[data-social-panel="instagram"]');
+    const trigger = section.querySelector('[data-load-social="instagram"]');
+    const placeholder = section.querySelector("[data-embed-placeholder]");
+    if (!embedContent || !status) return;
+
+    const social = getSocialConfig();
+    const instagramUrl = social.instagramUrl;
+    const posts = social.instagramEmbedPosts
+      .filter((item) => isValidUrl(item))
+      .slice(0, 3);
+
+    if (!isValidUrl(instagramUrl) || !posts.length) {
+      if (!auto) {
+        setPanelOpen(panel, trigger, true, "Show latest posts", "Hide latest posts");
+        setStatus(status, "Instagram previews are unavailable right now. Use the profile link instead.", "warning");
+      }
+      return;
+    }
+
+    if (state.instagramLoading) {
+      if (!auto) {
+        setPanelOpen(panel, trigger, true, "Show latest posts", "Hide latest posts");
+        setStatus(status, "Loading latest Instagram posts...");
+      }
+      return;
+    }
+
+    if (!auto) {
+      setPanelOpen(panel, trigger, true, "Show latest posts", "Hide latest posts");
+    }
+
+    state.instagramLoading = true;
+    if (trigger) {
+      trigger.setAttribute("disabled", "true");
+      trigger.textContent = "Loading posts...";
+    }
+
+    if (placeholder) {
+      placeholder.classList.remove("hidden");
+    }
+
+    embedContent.classList.add("hidden");
+    setStatus(status, auto ? "" : "Loading latest Instagram posts...");
+
+    embedContent.innerHTML = posts
+      .map(
+        (url) => `
+          <blockquote class="instagram-media" data-instgrm-permalink="${escapeHtml(
+            `${url}?utm_source=ig_embed&utm_campaign=loading`
+          )}" data-instgrm-version="14"></blockquote>
+        `
+      )
+      .join("");
+
+    try {
+      await loadInstagramScript();
+      if (
+        window.instgrm &&
+        window.instgrm.Embeds &&
+        typeof window.instgrm.Embeds.process === "function"
+      ) {
+        window.instgrm.Embeds.process();
+      }
+
+      await wait(2200);
+      const hasIframe = embedContent.querySelector("iframe") !== null;
+
+      if (hasIframe) {
+        state.instagramLoaded = true;
+        if (placeholder) {
+          placeholder.classList.add("hidden");
+        }
+        embedContent.classList.remove("hidden");
+
+        if (auto && !state.instagramInteracted) {
+          setPanelOpen(panel, trigger, false, "Show latest posts", "Hide latest posts");
+          setStatus(status, "");
+        } else {
+          setPanelOpen(panel, trigger, true, "Show latest posts", "Hide latest posts");
+          setStatus(status, "Latest Instagram posts loaded.", "success");
+        }
+
+        return;
+      } else {
+        throw new Error("Instagram preview did not render");
+      }
+    } catch (error) {
+      if (placeholder) {
+        placeholder.classList.add("hidden");
+      }
+      embedContent.classList.add("hidden");
+      embedContent.innerHTML = "";
+
+      if (!auto) {
+        setPanelOpen(panel, trigger, true, "Show latest posts", "Hide latest posts");
+        setStatus(
+          status,
+          "Instagram preview is blocked in this browser. Use the profile button to view posts.",
+          "warning"
+        );
+      } else {
+        setPanelOpen(panel, trigger, false, "Show latest posts", "Hide latest posts");
+        setStatus(status, "");
+      }
+    } finally {
+      state.instagramLoading = false;
+      if (trigger) {
+        trigger.removeAttribute("disabled");
+      }
+      syncInstagramButtonState(section);
+    }
+  };
+
+  const loadTikTokEmbed = async (section) => {
+    const state = getSocialSectionState(section);
+
+    const tiktokContent = section.querySelector("[data-tiktok-content]");
+    const status = section.querySelector("[data-tiktok-status]");
+    const panel = section.querySelector('[data-social-panel="tiktok"]');
+    const trigger = section.querySelector('[data-load-social="tiktok"]');
+    const placeholder = section.querySelector("[data-tiktok-placeholder]");
+    if (!tiktokContent || !status) return;
+
+    const social = getSocialConfig();
+    const tiktokUrl = social.tiktokUrl;
+    if (!isValidUrl(tiktokUrl)) {
+      setPanelOpen(panel, trigger, true, "Load TikTok feed", "Hide TikTok feed");
+      setStatus(status, "TikTok preview is unavailable right now. Use the profile link instead.", "warning");
+      return;
+    }
+
+    if (state.tiktokLoading) {
+      setPanelOpen(
+        panel,
+        trigger,
+        true,
+        state.tiktokLoaded ? "Show TikTok feed" : "Load TikTok feed",
+        "Hide TikTok feed"
+      );
+      setStatus(status, "Loading latest TikTok posts...");
+      return;
+    }
+
+    setPanelOpen(
+      panel,
+      trigger,
+      true,
+      state.tiktokLoaded ? "Show TikTok feed" : "Load TikTok feed",
+      "Hide TikTok feed"
+    );
+
+    state.tiktokLoading = true;
+    if (trigger) {
+      trigger.setAttribute("disabled", "true");
+      trigger.textContent = "Loading TikTok feed...";
+    }
+
+    if (placeholder) {
+      placeholder.classList.remove("hidden");
+    }
+    tiktokContent.classList.add("hidden");
+    setStatus(status, "Loading latest TikTok posts...");
+
+    const handle = extractTikTokHandle(tiktokUrl) || "elysium_by_georgierose";
+    tiktokContent.innerHTML = `
+      <blockquote class="tiktok-embed" cite="${escapeHtml(
+        tiktokUrl
+      )}" data-unique-id="${escapeHtml(
+        handle
+      )}" data-embed-type="creator" style="margin:0;">
+        <section>
+          <a target="_blank" rel="noreferrer noopener" href="${escapeHtml(
+            tiktokUrl
+          )}">@${escapeHtml(handle)}</a>
+        </section>
+      </blockquote>
+    `;
+
+    try {
+      await loadTikTokScript();
+      await wait(2000);
+      const hasIframe = tiktokContent.querySelector("iframe") !== null;
+      if (hasIframe) {
+        state.tiktokLoaded = true;
+        if (placeholder) {
+          placeholder.classList.add("hidden");
+        }
+        tiktokContent.classList.remove("hidden");
+        setStatus(status, "Latest TikTok posts loaded.", "success");
+      } else {
+        throw new Error("TikTok preview did not render");
+      }
+    } catch (error) {
+      if (placeholder) {
+        placeholder.classList.add("hidden");
+      }
+      tiktokContent.classList.add("hidden");
+      tiktokContent.innerHTML = "";
+      setStatus(
+        status,
+        "TikTok preview is blocked in this browser. Use the profile button to view posts.",
+        "warning"
+      );
+    } finally {
+      state.tiktokLoading = false;
+      if (trigger) {
+        trigger.removeAttribute("disabled");
+      }
+      syncTikTokButtonState(section);
+    }
+  };
+
   const initSocialEmbeds = () => {
     const sections = Array.from(document.querySelectorAll("[data-social-embed]"));
     if (!sections.length) return;
+
+    sections.forEach((section) => {
+      const state = getSocialSectionState(section);
+      const instagramTrigger = section.querySelector('[data-load-social="instagram"]');
+      const instagramPanel = section.querySelector('[data-social-panel="instagram"]');
+      const instagramStatus = section.querySelector("[data-embed-status]");
+      const tiktokTrigger = section.querySelector('[data-load-social="tiktok"]');
+      const tiktokPanel = section.querySelector('[data-social-panel="tiktok"]');
+      const tiktokStatus = section.querySelector("[data-tiktok-status]");
+
+      if (instagramTrigger) {
+        instagramTrigger.addEventListener("click", async () => {
+          state.instagramInteracted = true;
+
+          if (state.instagramLoaded) {
+            const shouldOpen = instagramPanel ? instagramPanel.classList.contains("hidden") : true;
+            setPanelOpen(instagramPanel, instagramTrigger, shouldOpen, "Show latest posts", "Hide latest posts");
+            setStatus(
+              instagramStatus,
+              shouldOpen ? "Latest Instagram posts loaded." : "",
+              shouldOpen ? "success" : "info"
+            );
+            return;
+          }
+
+          await loadInstagramEmbeds(section, { auto: false });
+        });
+      }
+
+      if (tiktokTrigger) {
+        tiktokTrigger.addEventListener("click", async () => {
+          state.tiktokInteracted = true;
+
+          if (state.tiktokLoaded) {
+            const shouldOpen = tiktokPanel ? tiktokPanel.classList.contains("hidden") : true;
+            setPanelOpen(
+              tiktokPanel,
+              tiktokTrigger,
+              shouldOpen,
+              "Show TikTok feed",
+              "Hide TikTok feed"
+            );
+            setStatus(
+              tiktokStatus,
+              shouldOpen ? "Latest TikTok posts loaded." : "",
+              shouldOpen ? "success" : "info"
+            );
+            return;
+          }
+
+          await loadTikTokEmbed(section);
+        });
+      }
+
+      syncInstagramButtonState(section);
+      syncTikTokButtonState(section);
+    });
+
+    if (!("IntersectionObserver" in window)) return;
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
           observer.unobserve(entry.target);
-          loadSocialEmbedSection(entry.target);
+          loadInstagramEmbeds(entry.target, { auto: true });
         });
       },
       {
@@ -771,106 +1321,6 @@
     );
 
     sections.forEach((section) => observer.observe(section));
-  };
-
-  const loadSocialEmbedSection = async (section) => {
-    const embedContent = section.querySelector("[data-embed-content]");
-    const fallback = section.querySelector("[data-embed-fallback]");
-    const status = section.querySelector("[data-embed-status]");
-    const tiktokContent = section.querySelector("[data-tiktok-content]");
-    const tiktokStatus = section.querySelector("[data-tiktok-status]");
-
-    if (!embedContent || !fallback || !status) return;
-
-    const social = getSocialConfig();
-    const instagramUrl = social.instagramUrl;
-    const tiktokUrl = social.tiktokUrl;
-    const posts = social.instagramEmbedPosts
-      .filter((item) => isValidUrl(item))
-      .slice(0, 3);
-
-    let instagramReady = false;
-    let tiktokReady = !tiktokContent || !tiktokStatus;
-
-    if (!isValidUrl(instagramUrl)) {
-      status.textContent = "Add your Instagram link in site-config.js to enable embeds.";
-    } else if (!posts.length) {
-      status.textContent = "Add Instagram post URLs in site-config.js to show live embeds.";
-    } else {
-      embedContent.innerHTML = posts
-        .map(
-          (url) => `
-            <blockquote class="instagram-media" data-instgrm-permalink="${escapeHtml(
-              `${url}?utm_source=ig_embed&utm_campaign=loading`
-            )}" data-instgrm-version="14" style="margin:0 auto 1rem; max-width:540px; width:100%;"></blockquote>
-          `
-        )
-        .join("");
-
-      try {
-        await loadInstagramScript();
-        if (
-          window.instgrm &&
-          window.instgrm.Embeds &&
-          typeof window.instgrm.Embeds.process === "function"
-        ) {
-          window.instgrm.Embeds.process();
-        }
-
-        await wait(2800);
-        const hasIframe = embedContent.querySelector("iframe") !== null;
-
-        if (hasIframe) {
-          instagramReady = true;
-          status.textContent = "Latest posts from Instagram.";
-        } else {
-          status.textContent = "Instagram embed is blocked in this browser, showing fallback content.";
-        }
-      } catch (error) {
-        status.textContent = "Instagram embed is unavailable right now, showing fallback content.";
-      }
-    }
-
-    if (tiktokContent && tiktokStatus) {
-      if (!isValidUrl(tiktokUrl)) {
-        tiktokStatus.textContent = "Add your TikTok link in site-config.js to enable the embed.";
-      } else {
-        const handle = extractTikTokHandle(tiktokUrl) || "elysium_by_georgierose";
-        tiktokContent.innerHTML = `
-          <blockquote class="tiktok-embed" cite="${escapeHtml(
-            tiktokUrl
-          )}" data-unique-id="${escapeHtml(
-            handle
-          )}" data-embed-type="creator" style="margin:0; max-width:780px; min-width:260px;">
-            <section>
-              <a target="_blank" rel="noreferrer noopener" href="${escapeHtml(
-                tiktokUrl
-              )}">@${escapeHtml(handle)}</a>
-            </section>
-          </blockquote>
-        `;
-
-        try {
-          await loadTikTokScript();
-          await wait(2400);
-          const hasTikTokFrame = tiktokContent.querySelector("iframe") !== null;
-          if (hasTikTokFrame) {
-            tiktokReady = true;
-            tiktokStatus.textContent = "Latest posts from TikTok.";
-          } else {
-            tiktokStatus.textContent = "TikTok embed is blocked in this browser, showing fallback content.";
-          }
-        } catch (error) {
-          tiktokStatus.textContent = "TikTok embed is unavailable right now, showing fallback content.";
-        }
-      }
-    }
-
-    if (instagramReady && tiktokReady) {
-      fallback.classList.add("hidden");
-    } else {
-      fallback.classList.remove("hidden");
-    }
   };
 
   const initEnquiryForms = () => {
@@ -888,6 +1338,53 @@
         form.setAttribute("action", configuredAction);
       }
 
+      const fields = Array.from(form.querySelectorAll("[data-validate-field]"));
+      const getFieldErrorNode = (field) =>
+        form.querySelector(`[data-field-error-for="${field.getAttribute("id")}"]`);
+
+      const getValidationMessage = (field) => {
+        if (field.validity.valueMissing) {
+          return field.getAttribute("data-required-message") || "This field is required.";
+        }
+
+        if (field.validity.typeMismatch && field.getAttribute("type") === "email") {
+          return "Enter a valid email address.";
+        }
+
+        return "";
+      };
+
+      const setFieldState = (field, message) => {
+        const fieldErrorNode = getFieldErrorNode(field);
+        if (fieldErrorNode) {
+          fieldErrorNode.textContent = message || "";
+        }
+
+        if (message) {
+          field.setAttribute("aria-invalid", "true");
+        } else {
+          field.removeAttribute("aria-invalid");
+        }
+      };
+
+      const validateField = (field) => {
+        const message = getValidationMessage(field);
+        setFieldState(field, message);
+        return !message;
+      };
+
+      fields.forEach((field) => {
+        ["input", "change", "blur"].forEach((eventName) => {
+          field.addEventListener(eventName, () => {
+            if (!field.value && !field.hasAttribute("required")) {
+              setFieldState(field, "");
+              return;
+            }
+            validateField(field);
+          });
+        });
+      });
+
       form.addEventListener("submit", async (event) => {
         event.preventDefault();
 
@@ -895,8 +1392,21 @@
           errorNode.textContent = "";
         }
 
-        if (!form.checkValidity()) {
-          form.reportValidity();
+        let firstInvalidField = null;
+
+        fields.forEach((field) => {
+          const valid = validateField(field);
+          if (!valid && !firstInvalidField) {
+            firstInvalidField = field;
+          }
+        });
+
+        if (firstInvalidField) {
+          if (errorNode) {
+            errorNode.textContent =
+              "Please complete the required fields before sending your enquiry.";
+          }
+          firstInvalidField.focus();
           return;
         }
 
@@ -953,6 +1463,8 @@
 
   ready(() => {
     applyConfig();
+    initProgressiveImages();
+    initGalleryAltText();
     initYear();
     initActiveNav();
     initMobileNav();

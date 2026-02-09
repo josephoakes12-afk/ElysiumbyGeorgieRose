@@ -1,4 +1,4 @@
-﻿User-agent: *
+User-agent: *
 Allow: /
 
-Sitemap: https://www.elysiumpermanentjewellery.co.uk/sitemap.xml
+Sitemap: https://josephoakes12-afk.github.io/ElysiumbyGeorgieRose/sitemap.xml
