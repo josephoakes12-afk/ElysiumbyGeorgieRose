@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap"></noscript>
   <link rel="stylesheet" href="assets/style.ae87f78b.css">
+  <link rel="stylesheet" href="assets/mobile.css">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -122,19 +123,28 @@
       <div class="container">
         <h2 class="section-title">Jewellery options</h2>
         <p class="section-intro">Permanent jewellery services currently offered.</p>
-        <div class="grid grid-3">
-          <article id="bracelets" class="card">
-            <h3>Welded Bracelet</h3>
-            <p class="muted">A timeless everyday piece, measured to your exact fit.</p>
-          </article>
-          <article id="anklets" class="card">
-            <h3>Welded Anklet</h3>
-            <p class="muted">Lightweight anklets with a neat, polished welded finish.</p>
-          </article>
-          <article id="rings" class="card">
-            <h3>Welded Ring</h3>
-            <p class="muted">Minimal, modern ring fittings for subtle continuous wear.</p>
-          </article>
+        <div class="service-layout">
+          <details id="bracelets" class="service-section card service-accordion" open>
+            <summary class="section-title">Welded Bracelet</summary>
+            <div class="service-content">
+              <h3>About this option</h3>
+              <p class="muted">A timeless everyday piece, measured to your exact fit and welded for a clean, clasp-free finish.</p>
+            </div>
+          </details>
+          <details id="anklets" class="service-section card service-accordion" open>
+            <summary class="section-title">Welded Anklet</summary>
+            <div class="service-content">
+              <h3>About this option</h3>
+              <p class="muted">Lightweight anklets with a neat, polished welded finish designed for comfortable daily wear.</p>
+            </div>
+          </details>
+          <details id="rings" class="service-section card service-accordion" open>
+            <summary class="section-title">Welded Ring</summary>
+            <div class="service-content">
+              <h3>About this option</h3>
+              <p class="muted">Minimal, modern ring fittings for subtle continuous wear with the same custom-fitted process.</p>
+            </div>
+          </details>
         </div>
       </div>
     </section>
@@ -149,24 +159,27 @@
           - Hero images: around 250KB to 400KB each.
           - Prefer AVIF/WebP exports with JPG fallback when new assets are prepared.
         -->
-        <div class="image-grid" aria-label="Permanent jewellery gallery">
-          <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Blue%20%26%20gold%20Bracelet.jpg" data-alt="Permanent jewellery - bracelet, blue & gold"><img src="assets/images/Jewellery/Blue%20%26%20gold%20Bracelet.jpg" alt="Permanent jewellery - bracelet, blue & gold" loading="lazy" decoding="async" width="900" height="1120"></button>
-          <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Blue%20bracelet%20%26%20charm.jpg" data-alt="Permanent jewellery - bracelet, blue & charm"><img src="assets/images/Jewellery/Blue%20bracelet%20%26%20charm.jpg" alt="Permanent jewellery - bracelet, blue & charm" loading="lazy" decoding="async" width="900" height="1120"></button>
-          <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Blue%20charms%20up%20close%20photo.jpg" data-alt="Permanent jewellery - piece, blue charms up close photo"><img src="assets/images/Jewellery/Blue%20charms%20up%20close%20photo.jpg" alt="Permanent jewellery - piece, blue charms up close photo" loading="lazy" decoding="async" width="900" height="1120"></button>
-          <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Gold%20permanent%20bracelet.jpg" data-alt="Permanent jewellery - bracelet, gold"><img src="assets/images/Jewellery/Gold%20permanent%20bracelet.jpg" alt="Permanent jewellery - bracelet, gold" loading="lazy" decoding="async" width="900" height="1120"></button>
-          <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Holding%20hands%20with%20bracelets.jpg" data-alt="Permanent jewellery - bracelet, holding hands with bracelets"><img src="assets/images/Jewellery/Holding%20hands%20with%20bracelets.jpg" alt="Permanent jewellery - bracelet, holding hands with bracelets" loading="lazy" decoding="async" width="900" height="1120"></button>
-          <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Welding%20bracelet.jpg" data-alt="Permanent jewellery - bracelet, feature detail"><img src="assets/images/Jewellery/Welding%20bracelet.jpg" alt="Permanent jewellery - bracelet, feature detail" loading="lazy" decoding="async" width="900" height="1120"></button>
-          <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Silver%20bracelet%20with%20peaks%20background.jpg" data-alt="Permanent jewellery - bracelet, silver with peaks background"><img src="assets/images/Jewellery/Silver%20bracelet%20with%20peaks%20background.jpg" alt="Permanent jewellery - bracelet, silver with peaks background" loading="lazy" decoding="async" width="900" height="1120"></button>
-          <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Gold%20chains%20in%20low%20light.jpg" data-alt="Permanent jewellery - piece, gold chains in low light"><img src="assets/images/Jewellery/Gold%20chains%20in%20low%20light.jpg" alt="Permanent jewellery - piece, gold chains in low light" loading="lazy" decoding="async" width="900" height="1120"></button>
-          <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Silver%20chains%20in%20low%20light.jpg" data-alt="Permanent jewellery - piece, silver chains in low light"><img src="assets/images/Jewellery/Silver%20chains%20in%20low%20light.jpg" alt="Permanent jewellery - piece, silver chains in low light" loading="lazy" decoding="async" width="900" height="1120"></button>
-          <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Silver%20twist%20anklet%20with%20charm.jpg" data-alt="Permanent jewellery - anklet, silver twist with charm"><img src="assets/images/Jewellery/Silver%20twist%20anklet%20with%20charm.jpg" alt="Permanent jewellery - anklet, silver twist with charm" loading="lazy" decoding="async" width="900" height="1120"></button>
-          <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Silver%20twist%20chain%20with%20mirror%20background.jpg" data-alt="Permanent jewellery - piece, silver twist chain with mirror background"><img src="assets/images/Jewellery/Silver%20twist%20chain%20with%20mirror%20background.jpg" alt="Permanent jewellery - piece, silver twist chain with mirror background" loading="lazy" decoding="async" width="900" height="1120"></button>
-          <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Pearl%20and%20heart%20bracelets.jpg" data-alt="Permanent jewellery - bracelet, pearl and heart bracelets"><img src="assets/images/Jewellery/Pearl%20and%20heart%20bracelets.jpg" alt="Permanent jewellery - bracelet, pearl and heart bracelets" loading="lazy" decoding="async" width="900" height="1120"></button>
-          <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Pearl%20chain%20on%20white%20background.jpg" data-alt="Permanent jewellery - piece, pearl chain on white background"><img src="assets/images/Jewellery/Pearl%20chain%20on%20white%20background.jpg" alt="Permanent jewellery - piece, pearl chain on white background" loading="lazy" decoding="async" width="900" height="1120"></button>
-          <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Pearl%20chain%20on%20mirror%20background.jpg" data-alt="Permanent jewellery - piece, pearl chain on mirror background"><img src="assets/images/Jewellery/Pearl%20chain%20on%20mirror%20background.jpg" alt="Permanent jewellery - piece, pearl chain on mirror background" loading="lazy" decoding="async" width="900" height="1120"></button>
-          <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Gold%20pearl%20anklet.jpg" data-alt="Permanent jewellery - anklet, gold pearl"><img src="assets/images/Jewellery/Gold%20pearl%20anklet.jpg" alt="Permanent jewellery - anklet, gold pearl" loading="lazy" decoding="async" width="900" height="1120"></button>
-          <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Joe%20gold%20twist%20chain.jpg" data-alt="Permanent jewellery - piece, joe gold twist chain"><img src="assets/images/Jewellery/Joe%20gold%20twist%20chain.jpg" alt="Permanent jewellery - piece, joe gold twist chain" loading="lazy" decoding="async" width="900" height="1120"></button>
+        <div class="mobile-gallery-crop" data-crop-gallery>
+          <div class="image-grid" aria-label="Permanent jewellery gallery">
+            <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Blue%20%26%20gold%20Bracelet.jpg" data-alt="Permanent jewellery - bracelet, blue & gold"><img src="assets/images/Jewellery/Blue%20%26%20gold%20Bracelet.jpg" alt="Permanent jewellery - bracelet, blue & gold" loading="lazy" decoding="async" width="900" height="1120"></button>
+            <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Blue%20bracelet%20%26%20charm.jpg" data-alt="Permanent jewellery - bracelet, blue & charm"><img src="assets/images/Jewellery/Blue%20bracelet%20%26%20charm.jpg" alt="Permanent jewellery - bracelet, blue & charm" loading="lazy" decoding="async" width="900" height="1120"></button>
+            <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Blue%20charms%20up%20close%20photo.jpg" data-alt="Permanent jewellery - piece, blue charms up close photo"><img src="assets/images/Jewellery/Blue%20charms%20up%20close%20photo.jpg" alt="Permanent jewellery - piece, blue charms up close photo" loading="lazy" decoding="async" width="900" height="1120"></button>
+            <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Gold%20permanent%20bracelet.jpg" data-alt="Permanent jewellery - bracelet, gold"><img src="assets/images/Jewellery/Gold%20permanent%20bracelet.jpg" alt="Permanent jewellery - bracelet, gold" loading="lazy" decoding="async" width="900" height="1120"></button>
+            <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Holding%20hands%20with%20bracelets.jpg" data-alt="Permanent jewellery - bracelet, holding hands with bracelets"><img src="assets/images/Jewellery/Holding%20hands%20with%20bracelets.jpg" alt="Permanent jewellery - bracelet, holding hands with bracelets" loading="lazy" decoding="async" width="900" height="1120"></button>
+            <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Welding%20bracelet.jpg" data-alt="Permanent jewellery - bracelet, feature detail"><img src="assets/images/Jewellery/Welding%20bracelet.jpg" alt="Permanent jewellery - bracelet, feature detail" loading="lazy" decoding="async" width="900" height="1120"></button>
+            <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Silver%20bracelet%20with%20peaks%20background.jpg" data-alt="Permanent jewellery - bracelet, silver with peaks background"><img src="assets/images/Jewellery/Silver%20bracelet%20with%20peaks%20background.jpg" alt="Permanent jewellery - bracelet, silver with peaks background" loading="lazy" decoding="async" width="900" height="1120"></button>
+            <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Gold%20chains%20in%20low%20light.jpg" data-alt="Permanent jewellery - piece, gold chains in low light"><img src="assets/images/Jewellery/Gold%20chains%20in%20low%20light.jpg" alt="Permanent jewellery - piece, gold chains in low light" loading="lazy" decoding="async" width="900" height="1120"></button>
+            <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Silver%20chains%20in%20low%20light.jpg" data-alt="Permanent jewellery - piece, silver chains in low light"><img src="assets/images/Jewellery/Silver%20chains%20in%20low%20light.jpg" alt="Permanent jewellery - piece, silver chains in low light" loading="lazy" decoding="async" width="900" height="1120"></button>
+            <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Silver%20twist%20anklet%20with%20charm.jpg" data-alt="Permanent jewellery - anklet, silver twist with charm"><img src="assets/images/Jewellery/Silver%20twist%20anklet%20with%20charm.jpg" alt="Permanent jewellery - anklet, silver twist with charm" loading="lazy" decoding="async" width="900" height="1120"></button>
+            <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Silver%20twist%20chain%20with%20mirror%20background.jpg" data-alt="Permanent jewellery - piece, silver twist chain with mirror background"><img src="assets/images/Jewellery/Silver%20twist%20chain%20with%20mirror%20background.jpg" alt="Permanent jewellery - piece, silver twist chain with mirror background" loading="lazy" decoding="async" width="900" height="1120"></button>
+            <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Pearl%20and%20heart%20bracelets.jpg" data-alt="Permanent jewellery - bracelet, pearl and heart bracelets"><img src="assets/images/Jewellery/Pearl%20and%20heart%20bracelets.jpg" alt="Permanent jewellery - bracelet, pearl and heart bracelets" loading="lazy" decoding="async" width="900" height="1120"></button>
+            <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Pearl%20chain%20on%20white%20background.jpg" data-alt="Permanent jewellery - piece, pearl chain on white background"><img src="assets/images/Jewellery/Pearl%20chain%20on%20white%20background.jpg" alt="Permanent jewellery - piece, pearl chain on white background" loading="lazy" decoding="async" width="900" height="1120"></button>
+            <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Pearl%20chain%20on%20mirror%20background.jpg" data-alt="Permanent jewellery - piece, pearl chain on mirror background"><img src="assets/images/Jewellery/Pearl%20chain%20on%20mirror%20background.jpg" alt="Permanent jewellery - piece, pearl chain on mirror background" loading="lazy" decoding="async" width="900" height="1120"></button>
+            <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Gold%20pearl%20anklet.jpg" data-alt="Permanent jewellery - anklet, gold pearl"><img src="assets/images/Jewellery/Gold%20pearl%20anklet.jpg" alt="Permanent jewellery - anklet, gold pearl" loading="lazy" decoding="async" width="900" height="1120"></button>
+            <button class="image-card" type="button" data-lightbox="assets/images/Jewellery/Joe%20gold%20twist%20chain.jpg" data-alt="Permanent jewellery - piece, joe gold twist chain"><img src="assets/images/Jewellery/Joe%20gold%20twist%20chain.jpg" alt="Permanent jewellery - piece, joe gold twist chain" loading="lazy" decoding="async" width="900" height="1120"></button>
+          </div>
         </div>
+        <button class="btn btn-secondary" type="button" data-show-more-gallery>Show more</button>
       </div>
     </section>
 
@@ -277,6 +290,11 @@
 
   <script src="assets/site-config.2d266e56.js" defer></script>
   <script src="assets/main.68865a81.js" defer></script>
+  <script src="assets/mobile-enhancements.js" defer></script>
+  <div class="sticky-cta" role="navigation" aria-label="Quick actions">
+    <a class="btn btn-primary" href="contact.html">Book / Enquire</a>
+    <a class="btn btn-ghost" href="tel:+447361497192">Call</a>
+  </div>
 </body>
 </html>
 

@@ -1,0 +1,257 @@
+/* Mobile improvements for iPhone-sized layouts */
+.service-accordion > summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-weight: 700;
+}
+
+.service-accordion > summary::-webkit-details-marker {
+  display: none;
+}
+
+.service-accordion > summary::after {
+  content: "+";
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.service-accordion[open] > summary::after {
+  content: "-";
+}
+
+.service-accordion .service-content {
+  padding-top: 12px;
+}
+
+[data-show-more-gallery] {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* --- Global spacing: reduce scroll without feeling cramped --- */
+  :root {
+    --m-section-py: 28px;
+    --m-card-p: 16px;
+    --m-gap: 12px;
+    --m-radius: 16px;
+  }
+
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    padding-bottom: 76px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .section {
+    padding-top: var(--m-section-py);
+    padding-bottom: var(--m-section-py);
+  }
+
+  .surface {
+    padding-top: var(--m-section-py);
+    padding-bottom: var(--m-section-py);
+  }
+
+  .card {
+    padding: var(--m-card-p);
+    border-radius: var(--m-radius);
+  }
+
+  .grid,
+  .grid-2,
+  .grid-3 {
+    gap: var(--m-gap) !important;
+  }
+
+  /* Stack any multi-column grids */
+  .grid-2,
+  .grid.grid-2,
+  .grid-3,
+  .grid.grid-3 {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* --- Hero: reduce height + reduce typography + prevent collage bloat --- */
+  .hero {
+    padding: 26px 0;
+  }
+
+  .hero-title {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+  .lead {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .hero-copy {
+    max-width: 100%;
+  }
+
+  /* If a hero collage exists, keep it minimal on mobile */
+  .hero-collage {
+    display: none !important;
+  }
+
+  /* --- Header: reduce height and simplify (sticky CTA takes over) --- */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .header-inner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .brand-mark {
+    width: 40px;
+    height: 40px;
+  }
+
+  .brand-tagline {
+    display: none !important;
+  }
+
+  .header-meta .btn[data-book-link] {
+    display: none !important;
+  }
+
+  .social-inline {
+    display: none !important;
+  }
+
+  /* --- Nav: make menu easier on mobile --- */
+  .nav-toggle {
+    min-height: 44px;
+    padding: 10px 14px;
+    border-radius: 999px;
+  }
+
+  .site-nav-links a {
+    min-height: 44px;
+    padding: 14px 12px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* --- Hide repeated in-page CTA bands on mobile (sticky CTA replaces them) --- */
+  .cta-band,
+  .hero-actions,
+  .hero .btn-group,
+  .cta-row,
+  .cta-buttons {
+    display: none !important;
+  }
+
+  /* --- Forms: improve tap targets --- */
+  input,
+  select,
+  textarea,
+  button {
+    min-height: 44px;
+  }
+
+  .form-fields .field input,
+  .form-fields .field select,
+  .form-fields .field textarea {
+    width: 100%;
+    padding: 12px 12px;
+    font-size: 16px;
+    border-radius: 12px;
+  }
+
+  .form-fields .btn {
+    width: 100%;
+  }
+
+  /* --- Gallery grids: 2 columns on mobile for thumbnails --- */
+  .image-grid,
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+  }
+
+  .gallery-tile img,
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+  }
+
+  .mobile-gallery-crop {
+    max-height: 820px;
+    overflow: hidden;
+  }
+
+  .mobile-gallery-crop.is-expanded {
+    max-height: none;
+  }
+
+  [data-show-more-gallery] {
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 12px;
+    width: 100%;
+  }
+
+  /* --- Footer: reduce scroll and keep tidy --- */
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .footer-links a {
+    padding: 10px 0;
+  }
+
+  html.has-horizontal-overflow * {
+    outline: 1px solid rgba(255, 0, 0, 0.15);
+  }
+}
+
+/* Sticky bottom CTA bar (mobile only via media query below) */
+.sticky-cta {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sticky-cta {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2000;
+    padding: 10px 12px;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .sticky-cta .btn {
+    flex: 1;
+    min-height: 48px;
+    border-radius: 999px;
+    font-size: 15px;
+  }
+}
