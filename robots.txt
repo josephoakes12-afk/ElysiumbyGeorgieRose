@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://josephoakes12-afk.github.io/ElysiumbyGeorgieRose/sitemap.xml
+Sitemap: https://elysiumbygeorgierose.co.uk/sitemap.xml
