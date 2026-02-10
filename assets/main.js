@@ -412,7 +412,9 @@
       let sizeRule = "";
       if (img.matches(".hero-collage img")) {
         sizeRule = "(max-width: 420px) 92vw, (max-width: 760px) 46vw, (max-width: 1080px) 50vw, 32vw";
-      } else if (img.matches(".gallery-tile img, .image-card img")) {
+      } else if (img.matches(".gallery-tile img")) {
+        sizeRule = "(max-width: 768px) 50vw, 33vw";
+      } else if (img.matches(".image-card img")) {
         sizeRule =
           "(max-width: 520px) 100vw, (max-width: 760px) 50vw, (max-width: 1200px) 33vw, 280px";
       } else if (img.matches(".social-preview-grid img")) {
