@@ -237,7 +237,7 @@
       return optimisedImageManifestPromise;
     }
 
-    optimisedImageManifestPromise = fetch("assets/images/optimized/manifest.json", {
+    optimisedImageManifestPromise = fetch("/assets/images/optimized/manifest.json", {
       cache: "no-store"
     })
       .then(async (response) => {
@@ -566,12 +566,26 @@
         )
       );
 
+    if (!menu.id) {
+      const existingControlId = toggle.getAttribute("aria-controls");
+      menu.id = isNonEmptyString(existingControlId) ? existingControlId : "site-menu";
+    }
+    if (toggle.getAttribute("aria-controls") !== menu.id) {
+      toggle.setAttribute("aria-controls", menu.id);
+    }
+
+    menu.setAttribute("aria-hidden", "true");
+    menu.setAttribute("inert", "");
+    toggle.setAttribute("aria-expanded", "false");
+
     const openMenu = () => {
       isOpen = true;
       lastFocused = document.activeElement;
       menu.classList.add("is-open");
       backdrop.classList.add("is-open");
       toggle.setAttribute("aria-expanded", "true");
+      menu.setAttribute("aria-hidden", "false");
+      menu.removeAttribute("inert");
       document.body.classList.add("menu-open");
       const focusable = getFocusable();
       if (focusable.length) {
@@ -584,6 +598,8 @@
       menu.classList.remove("is-open");
       backdrop.classList.remove("is-open");
       toggle.setAttribute("aria-expanded", "false");
+      menu.setAttribute("aria-hidden", "true");
+      menu.setAttribute("inert", "");
       document.body.classList.remove("menu-open");
       if (lastFocused && typeof lastFocused.focus === "function") {
         lastFocused.focus();
@@ -674,12 +690,13 @@
     lightbox.setAttribute("aria-label", "Image preview");
     lightbox.setAttribute("aria-hidden", "true");
     lightbox.setAttribute("tabindex", "-1");
+    lightbox.setAttribute("inert", "");
 
     lightbox.innerHTML = `
       <div class="lightbox-frame">
         <button type="button" class="lightbox-close" aria-label="Close image preview">&times;</button>
         <button type="button" class="lightbox-nav prev" aria-label="Previous image"><</button>
-        <img class="lightbox-image" src="" alt="">
+        <img class="lightbox-image" src="" alt="" width="900" height="1120">
         <button type="button" class="lightbox-nav next" aria-label="Next image">></button>
       </div>
     `;
@@ -740,6 +757,7 @@
       openingTrigger = triggerElement || null;
       lastFocused = triggerElement || document.activeElement;
       updateImage();
+      lightbox.removeAttribute("inert");
       lightbox.classList.add("is-open");
       lightbox.setAttribute("aria-hidden", "false");
       isOpen = true;
@@ -751,6 +769,7 @@
       if (!isOpen) return;
       lightbox.classList.remove("is-open");
       lightbox.setAttribute("aria-hidden", "true");
+      lightbox.setAttribute("inert", "");
       isOpen = false;
       document.body.classList.remove("menu-open");
       const focusTarget = openingTrigger || lastFocused;
@@ -923,7 +942,6 @@
         if (loadMoreButton) {
           const hasMore = limit < totalMatching;
           loadMoreButton.hidden = !hasMore;
-          loadMoreButton.setAttribute("aria-hidden", String(!hasMore));
         }
       };
 

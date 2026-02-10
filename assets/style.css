@@ -101,17 +101,20 @@ img.img-skeleton {
       color-mix(in srgb, var(--card-strong), white 20%) 45%,
       color-mix(in srgb, var(--card), white 12%) 70%
     );
-  background-size: 180% 100%;
-  animation: skeleton-shimmer 1.5s linear infinite;
+  animation: skeleton-shimmer 1.5s ease-in-out infinite;
 }
 
 @keyframes skeleton-shimmer {
-  from {
-    background-position: 120% 0;
+  0% {
+    opacity: 0.72;
   }
 
-  to {
-    background-position: -60% 0;
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.72;
   }
 }
 
@@ -1043,8 +1046,7 @@ h4 {
       color-mix(in srgb, var(--card-strong), white 20%) 45%,
       color-mix(in srgb, var(--card), white 12%) 70%
     );
-  background-size: 180% 100%;
-  animation: skeleton-shimmer 1.45s linear infinite;
+  animation: skeleton-shimmer 1.45s ease-in-out infinite;
 }
 
 .embed-content {
