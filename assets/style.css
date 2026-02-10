@@ -1500,18 +1500,48 @@ hr.section-rule {
 
 @media (max-width: 960px) {
   .header-inner {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr;
     min-height: 80px;
+    gap: var(--space-3);
+    position: relative;
+  }
+
+  .brand {
+    min-width: 0;
+    padding-right: 5.25rem;
+  }
+
+  .brand-text {
+    min-width: 0;
+  }
+
+  .brand-name {
+    font-size: 0.95rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .brand-tagline {
+    display: none;
   }
 
   .nav-shell {
-    justify-self: end;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: auto;
+    max-width: none;
+    justify-self: auto;
   }
 
   .nav-toggle {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    min-height: 40px;
+    padding: 0.5rem 0.85rem;
   }
 
   .site-nav-links {
