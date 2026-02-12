@@ -877,6 +877,7 @@
       const tiles = Array.from(grid.querySelectorAll("[data-gallery-item]"));
       const countNode = wrapper.querySelector("[data-gallery-count]");
       const loadMoreButton = wrapper.querySelector("[data-gallery-load-more]");
+      const loadMoreWrap = loadMoreButton?.closest(".gallery-load-wrap");
       const pageSize = Number(wrapper.getAttribute("data-gallery-page-size")) || 12;
       const loadedByFilter = {};
 
@@ -978,6 +979,9 @@
         if (loadMoreButton) {
           const hasMore = limit < totalMatching;
           loadMoreButton.hidden = !hasMore;
+          if (loadMoreWrap) {
+            loadMoreWrap.hidden = !hasMore;
+          }
         }
       };
 

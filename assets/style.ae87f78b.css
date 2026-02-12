@@ -540,11 +540,13 @@ h4 {
   box-shadow: var(--shadow-soft);
 }
 
-.hero-collage > :first-child img {
+.hero-collage > :first-child img,
+.hero-collage > img:first-child {
   transform: translateY(1.1rem);
 }
 
-.hero-collage > :last-child img {
+.hero-collage > :last-child img,
+.hero-collage > img:last-child {
   transform: translateY(-0.9rem);
 }
 
@@ -1660,7 +1662,9 @@ hr.section-rule {
   }
 
   .hero-collage > :first-child img,
-  .hero-collage > :last-child img {
+  .hero-collage > :last-child img,
+  .hero-collage > img:first-child,
+  .hero-collage > img:last-child {
     transform: none;
   }
 
