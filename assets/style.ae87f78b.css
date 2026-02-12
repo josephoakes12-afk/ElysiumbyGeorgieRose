@@ -1554,8 +1554,8 @@ hr.section-rule {
     position: fixed;
     right: 1rem;
     top: 74px;
-    width: 100%;
-    max-width: min(20rem, calc(100% - 2rem));
+    width: calc(100% - 2rem);
+    max-width: 20rem;
     background: color-mix(in srgb, var(--card), white 26%);
     border: 1px solid color-mix(in srgb, var(--border), transparent 12%);
     border-radius: var(--radius-md);
