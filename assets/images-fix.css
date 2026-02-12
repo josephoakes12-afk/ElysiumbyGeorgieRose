@@ -7,6 +7,7 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  image-orientation: from-image;
 }
 
 /* Prevent flex/grid children from forcing overflow */
@@ -68,11 +69,32 @@ img,
   object-fit: cover;
 }
 
+/* Make above-the-fold home hero images larger on initial load */
+.hero-shell {
+  grid-template-columns: 0.95fr 1.05fr;
+  min-height: min(80vh, 760px);
+}
+
+.hero-collage {
+  min-height: 460px;
+}
+
 /* If any hero media uses a fixed height, keep proportions with object-fit */
 .hero .hero-media,
 .hero-collage {
   overflow: hidden;
   border-radius: 18px;
+}
+
+@media (max-width: 960px) {
+  .hero-shell {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .hero-collage {
+    min-height: 380px;
+  }
 }
 
 /* ---- Fix common cause: height:100% on images without a defined container height ---- */
@@ -99,12 +121,29 @@ img,
   .card img {
     max-height: 520px;
   }
+
+  .hero-collage {
+    min-height: min(58vh, 360px);
+  }
 }
 
 /* ---- Quality perception: avoid blurry scaling on hi-dpi by ensuring crisp rendering ---- */
 /* (Note: true quality needs correct source sizes; this helps a bit but main fix is below) */
 img {
   image-rendering: auto;
+}
+
+/* ---- Per-image framing overrides (non-gallery placements) ---- */
+.path-card img[src*="blue-extensions-640.ead336dc.jpg"],
+.image-card img[src*="blue-extensions-640.ead336dc.jpg"],
+.social-preview-grid img[src*="blue-extensions-640.ead336dc.jpg"] {
+  object-position: center 28%;
+}
+
+.path-card img[src*="holding-hands-with-bracelets-640.50a8e93e.jpg"],
+.image-card img[src*="holding-hands-with-bracelets-640.50a8e93e.jpg"],
+.social-preview-grid img[src*="holding-hands-with-bracelets-640.50a8e93e.jpg"] {
+  object-position: center 70%;
 }
 
 /* -------------------------------------------------

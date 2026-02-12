@@ -1,4 +1,5430 @@
 {
-  "generatedAt": "2026-02-10T00:00:00.000Z",
-  "images": {}
+  "generatedAt": "2026-02-12T11:40:53.431Z",
+  "widths": [
+    320,
+    480,
+    768,
+    1024,
+    1440
+  ],
+  "images": {
+    "assets/images/banner-for-pop-ups.png": {
+      "width": 1600,
+      "height": 1000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/banner-for-pop-ups-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/banner-for-pop-ups-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/banner-for-pop-ups-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/banner-for-pop-ups-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/banner-for-pop-ups-1440.avif"
+        },
+        {
+          "width": 1600,
+          "src": "assets/images/optimized/banner-for-pop-ups-1600.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/banner-for-pop-ups-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/banner-for-pop-ups-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/banner-for-pop-ups-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/banner-for-pop-ups-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/banner-for-pop-ups-1440.webp"
+        },
+        {
+          "width": 1600,
+          "src": "assets/images/optimized/banner-for-pop-ups-1600.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/banner-for-pop-ups-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/banner-for-pop-ups-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/banner-for-pop-ups-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/banner-for-pop-ups-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/banner-for-pop-ups-1440.jpg"
+        },
+        {
+          "width": 1600,
+          "src": "assets/images/optimized/banner-for-pop-ups-1600.jpg"
+        }
+      ]
+    },
+    "assets/images/curlogo.png": {
+      "width": 2000,
+      "height": 2000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/curlogo-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/curlogo-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/curlogo-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/curlogo-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/curlogo-1440.avif"
+        },
+        {
+          "width": 2000,
+          "src": "assets/images/optimized/curlogo-2000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/curlogo-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/curlogo-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/curlogo-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/curlogo-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/curlogo-1440.webp"
+        },
+        {
+          "width": 2000,
+          "src": "assets/images/optimized/curlogo-2000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/curlogo-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/curlogo-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/curlogo-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/curlogo-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/curlogo-1440.jpg"
+        },
+        {
+          "width": 2000,
+          "src": "assets/images/optimized/curlogo-2000.jpg"
+        }
+      ]
+    },
+    "assets/images/final-logo.jpg": {
+      "width": 800,
+      "height": 800,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/final-logo-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/final-logo-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/final-logo-768.avif"
+        },
+        {
+          "width": 800,
+          "src": "assets/images/optimized/final-logo-800.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/final-logo-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/final-logo-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/final-logo-768.webp"
+        },
+        {
+          "width": 800,
+          "src": "assets/images/optimized/final-logo-800.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/final-logo-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/final-logo-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/final-logo-768.jpg"
+        },
+        {
+          "width": 800,
+          "src": "assets/images/optimized/final-logo-800.jpg"
+        }
+      ]
+    },
+    "assets/images/gallery/gallery-1.jpg": {
+      "width": 900,
+      "height": 900,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/gallery/gallery-1-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/gallery/gallery-1-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/gallery/gallery-1-768.avif"
+        },
+        {
+          "width": 900,
+          "src": "assets/images/optimized/gallery/gallery-1-900.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/gallery/gallery-1-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/gallery/gallery-1-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/gallery/gallery-1-768.webp"
+        },
+        {
+          "width": 900,
+          "src": "assets/images/optimized/gallery/gallery-1-900.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/gallery/gallery-1-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/gallery/gallery-1-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/gallery/gallery-1-768.jpg"
+        },
+        {
+          "width": 900,
+          "src": "assets/images/optimized/gallery/gallery-1-900.jpg"
+        }
+      ]
+    },
+    "assets/images/gallery/gallery-2.jpg": {
+      "width": 900,
+      "height": 900,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/gallery/gallery-2-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/gallery/gallery-2-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/gallery/gallery-2-768.avif"
+        },
+        {
+          "width": 900,
+          "src": "assets/images/optimized/gallery/gallery-2-900.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/gallery/gallery-2-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/gallery/gallery-2-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/gallery/gallery-2-768.webp"
+        },
+        {
+          "width": 900,
+          "src": "assets/images/optimized/gallery/gallery-2-900.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/gallery/gallery-2-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/gallery/gallery-2-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/gallery/gallery-2-768.jpg"
+        },
+        {
+          "width": 900,
+          "src": "assets/images/optimized/gallery/gallery-2-900.jpg"
+        }
+      ]
+    },
+    "assets/images/gallery/gallery-3.jpg": {
+      "width": 900,
+      "height": 900,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/gallery/gallery-3-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/gallery/gallery-3-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/gallery/gallery-3-768.avif"
+        },
+        {
+          "width": 900,
+          "src": "assets/images/optimized/gallery/gallery-3-900.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/gallery/gallery-3-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/gallery/gallery-3-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/gallery/gallery-3-768.webp"
+        },
+        {
+          "width": 900,
+          "src": "assets/images/optimized/gallery/gallery-3-900.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/gallery/gallery-3-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/gallery/gallery-3-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/gallery/gallery-3-768.jpg"
+        },
+        {
+          "width": 900,
+          "src": "assets/images/optimized/gallery/gallery-3-900.jpg"
+        }
+      ]
+    },
+    "assets/images/gallery/gallery-4.jpg": {
+      "width": 900,
+      "height": 900,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/gallery/gallery-4-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/gallery/gallery-4-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/gallery/gallery-4-768.avif"
+        },
+        {
+          "width": 900,
+          "src": "assets/images/optimized/gallery/gallery-4-900.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/gallery/gallery-4-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/gallery/gallery-4-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/gallery/gallery-4-768.webp"
+        },
+        {
+          "width": 900,
+          "src": "assets/images/optimized/gallery/gallery-4-900.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/gallery/gallery-4-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/gallery/gallery-4-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/gallery/gallery-4-768.jpg"
+        },
+        {
+          "width": 900,
+          "src": "assets/images/optimized/gallery/gallery-4-900.jpg"
+        }
+      ]
+    },
+    "assets/images/gallery/gallery-5.jpg": {
+      "width": 900,
+      "height": 900,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/gallery/gallery-5-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/gallery/gallery-5-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/gallery/gallery-5-768.avif"
+        },
+        {
+          "width": 900,
+          "src": "assets/images/optimized/gallery/gallery-5-900.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/gallery/gallery-5-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/gallery/gallery-5-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/gallery/gallery-5-768.webp"
+        },
+        {
+          "width": 900,
+          "src": "assets/images/optimized/gallery/gallery-5-900.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/gallery/gallery-5-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/gallery/gallery-5-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/gallery/gallery-5-768.jpg"
+        },
+        {
+          "width": 900,
+          "src": "assets/images/optimized/gallery/gallery-5-900.jpg"
+        }
+      ]
+    },
+    "assets/images/gallery/gallery-6.jpg": {
+      "width": 900,
+      "height": 900,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/gallery/gallery-6-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/gallery/gallery-6-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/gallery/gallery-6-768.avif"
+        },
+        {
+          "width": 900,
+          "src": "assets/images/optimized/gallery/gallery-6-900.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/gallery/gallery-6-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/gallery/gallery-6-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/gallery/gallery-6-768.webp"
+        },
+        {
+          "width": 900,
+          "src": "assets/images/optimized/gallery/gallery-6-900.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/gallery/gallery-6-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/gallery/gallery-6-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/gallery/gallery-6-768.jpg"
+        },
+        {
+          "width": 900,
+          "src": "assets/images/optimized/gallery/gallery-6-900.jpg"
+        }
+      ]
+    },
+    "assets/images/gallery/gallery-7.jpg": {
+      "width": 900,
+      "height": 900,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/gallery/gallery-7-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/gallery/gallery-7-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/gallery/gallery-7-768.avif"
+        },
+        {
+          "width": 900,
+          "src": "assets/images/optimized/gallery/gallery-7-900.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/gallery/gallery-7-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/gallery/gallery-7-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/gallery/gallery-7-768.webp"
+        },
+        {
+          "width": 900,
+          "src": "assets/images/optimized/gallery/gallery-7-900.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/gallery/gallery-7-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/gallery/gallery-7-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/gallery/gallery-7-768.jpg"
+        },
+        {
+          "width": 900,
+          "src": "assets/images/optimized/gallery/gallery-7-900.jpg"
+        }
+      ]
+    },
+    "assets/images/gallery/gallery-8.jpg": {
+      "width": 900,
+      "height": 900,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/gallery/gallery-8-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/gallery/gallery-8-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/gallery/gallery-8-768.avif"
+        },
+        {
+          "width": 900,
+          "src": "assets/images/optimized/gallery/gallery-8-900.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/gallery/gallery-8-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/gallery/gallery-8-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/gallery/gallery-8-768.webp"
+        },
+        {
+          "width": 900,
+          "src": "assets/images/optimized/gallery/gallery-8-900.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/gallery/gallery-8-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/gallery/gallery-8-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/gallery/gallery-8-768.jpg"
+        },
+        {
+          "width": 900,
+          "src": "assets/images/optimized/gallery/gallery-8-900.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Blue & gold Bracelet.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Blue%20&%20gold%20Bracelet-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Blue%20&%20gold%20Bracelet-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Blue%20&%20gold%20Bracelet-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Blue%20&%20gold%20Bracelet-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Blue%20&%20gold%20Bracelet-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Blue%20&%20gold%20Bracelet-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Blue%20&%20gold%20Bracelet-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Blue%20&%20gold%20Bracelet-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Blue%20&%20gold%20Bracelet-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Blue%20&%20gold%20Bracelet-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Blue%20&%20gold%20Bracelet-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Blue%20&%20gold%20Bracelet-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Blue%20&%20gold%20Bracelet-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Blue%20&%20gold%20Bracelet-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Blue%20&%20gold%20Bracelet-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Blue%20&%20gold%20Bracelet-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Blue%20&%20gold%20Bracelet-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Blue%20&%20gold%20Bracelet-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Blue bracelet & charm.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Blue%20bracelet%20&%20charm-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Blue%20bracelet%20&%20charm-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Blue%20bracelet%20&%20charm-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Blue%20bracelet%20&%20charm-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Blue%20bracelet%20&%20charm-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Blue%20bracelet%20&%20charm-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Blue%20bracelet%20&%20charm-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Blue%20bracelet%20&%20charm-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Blue%20bracelet%20&%20charm-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Blue%20bracelet%20&%20charm-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Blue%20bracelet%20&%20charm-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Blue%20bracelet%20&%20charm-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Blue%20bracelet%20&%20charm-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Blue%20bracelet%20&%20charm-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Blue%20bracelet%20&%20charm-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Blue%20bracelet%20&%20charm-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Blue%20bracelet%20&%20charm-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Blue%20bracelet%20&%20charm-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Blue charms up close photo.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Blue%20charms%20up%20close%20photo-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Blue%20charms%20up%20close%20photo-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Blue%20charms%20up%20close%20photo-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Blue%20charms%20up%20close%20photo-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Blue%20charms%20up%20close%20photo-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Blue%20charms%20up%20close%20photo-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Blue%20charms%20up%20close%20photo-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Blue%20charms%20up%20close%20photo-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Blue%20charms%20up%20close%20photo-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Blue%20charms%20up%20close%20photo-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Blue%20charms%20up%20close%20photo-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Blue%20charms%20up%20close%20photo-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Blue%20charms%20up%20close%20photo-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Blue%20charms%20up%20close%20photo-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Blue%20charms%20up%20close%20photo-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Blue%20charms%20up%20close%20photo-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Blue%20charms%20up%20close%20photo-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Blue%20charms%20up%20close%20photo-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Emerlad connector.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Emerlad%20connector-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Emerlad%20connector-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Emerlad%20connector-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Emerlad%20connector-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Emerlad%20connector-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Emerlad%20connector-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Emerlad%20connector-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Emerlad%20connector-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Emerlad%20connector-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Emerlad%20connector-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Emerlad%20connector-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Emerlad%20connector-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Emerlad%20connector-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Emerlad%20connector-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Emerlad%20connector-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Emerlad%20connector-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Emerlad%20connector-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Emerlad%20connector-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Equiptment.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Equiptment-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Equiptment-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Equiptment-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Equiptment-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Equiptment-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Equiptment-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Equiptment-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Equiptment-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Equiptment-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Equiptment-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Equiptment-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Equiptment-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Equiptment-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Equiptment-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Equiptment-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Equiptment-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Equiptment-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Equiptment-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Georgie bracelet with charm.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Georgie%20bracelet%20with%20charm-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Georgie%20bracelet%20with%20charm-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Georgie%20bracelet%20with%20charm-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Georgie%20bracelet%20with%20charm-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Georgie%20bracelet%20with%20charm-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Georgie%20bracelet%20with%20charm-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Georgie%20bracelet%20with%20charm-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Georgie%20bracelet%20with%20charm-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Georgie%20bracelet%20with%20charm-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Georgie%20bracelet%20with%20charm-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Georgie%20bracelet%20with%20charm-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Georgie%20bracelet%20with%20charm-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Georgie%20bracelet%20with%20charm-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Georgie%20bracelet%20with%20charm-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Georgie%20bracelet%20with%20charm-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Georgie%20bracelet%20with%20charm-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Georgie%20bracelet%20with%20charm-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Georgie%20bracelet%20with%20charm-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Gold chains in low light.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Gold%20chains%20in%20low%20light-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Gold%20chains%20in%20low%20light-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Gold%20chains%20in%20low%20light-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Gold%20chains%20in%20low%20light-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Gold%20chains%20in%20low%20light-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Gold%20chains%20in%20low%20light-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Gold%20chains%20in%20low%20light-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Gold%20chains%20in%20low%20light-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Gold%20chains%20in%20low%20light-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Gold%20chains%20in%20low%20light-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Gold%20chains%20in%20low%20light-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Gold%20chains%20in%20low%20light-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Gold%20chains%20in%20low%20light-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Gold%20chains%20in%20low%20light-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Gold%20chains%20in%20low%20light-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Gold%20chains%20in%20low%20light-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Gold%20chains%20in%20low%20light-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Gold%20chains%20in%20low%20light-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Gold pearl anklet.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Gold%20pearl%20anklet-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Gold%20pearl%20anklet-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Gold%20pearl%20anklet-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Gold%20pearl%20anklet-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Gold%20pearl%20anklet-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Gold%20pearl%20anklet-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Gold%20pearl%20anklet-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Gold%20pearl%20anklet-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Gold%20pearl%20anklet-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Gold%20pearl%20anklet-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Gold%20pearl%20anklet-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Gold%20pearl%20anklet-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Gold%20pearl%20anklet-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Gold%20pearl%20anklet-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Gold%20pearl%20anklet-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Gold%20pearl%20anklet-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Gold%20pearl%20anklet-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Gold%20pearl%20anklet-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Gold permanent bracelet.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Gold%20permanent%20bracelet-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Gold%20permanent%20bracelet-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Gold%20permanent%20bracelet-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Gold%20permanent%20bracelet-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Gold%20permanent%20bracelet-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Gold%20permanent%20bracelet-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Gold%20permanent%20bracelet-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Gold%20permanent%20bracelet-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Gold%20permanent%20bracelet-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Gold%20permanent%20bracelet-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Gold%20permanent%20bracelet-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Gold%20permanent%20bracelet-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Gold%20permanent%20bracelet-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Gold%20permanent%20bracelet-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Gold%20permanent%20bracelet-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Gold%20permanent%20bracelet-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Gold%20permanent%20bracelet-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Gold%20permanent%20bracelet-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Heart charm.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Heart%20charm-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Heart%20charm-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Heart%20charm-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Heart%20charm-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Heart%20charm-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Heart%20charm-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Heart%20charm-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Heart%20charm-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Heart%20charm-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Heart%20charm-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Heart%20charm-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Heart%20charm-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Heart%20charm-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Heart%20charm-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Heart%20charm-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Heart%20charm-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Heart%20charm-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Heart%20charm-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Holding hands with bracelets.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Holding%20hands%20with%20bracelets-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Holding%20hands%20with%20bracelets-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Holding%20hands%20with%20bracelets-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Holding%20hands%20with%20bracelets-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Holding%20hands%20with%20bracelets-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Holding%20hands%20with%20bracelets-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Holding%20hands%20with%20bracelets-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Holding%20hands%20with%20bracelets-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Holding%20hands%20with%20bracelets-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Holding%20hands%20with%20bracelets-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Holding%20hands%20with%20bracelets-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Holding%20hands%20with%20bracelets-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Holding%20hands%20with%20bracelets-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Holding%20hands%20with%20bracelets-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Holding%20hands%20with%20bracelets-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Holding%20hands%20with%20bracelets-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Holding%20hands%20with%20bracelets-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Holding%20hands%20with%20bracelets-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Joe gold twist chain.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Joe%20gold%20twist%20chain-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Joe%20gold%20twist%20chain-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Joe%20gold%20twist%20chain-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Joe%20gold%20twist%20chain-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Joe%20gold%20twist%20chain-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Joe%20gold%20twist%20chain-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Joe%20gold%20twist%20chain-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Joe%20gold%20twist%20chain-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Joe%20gold%20twist%20chain-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Joe%20gold%20twist%20chain-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Joe%20gold%20twist%20chain-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Joe%20gold%20twist%20chain-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Joe%20gold%20twist%20chain-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Joe%20gold%20twist%20chain-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Joe%20gold%20twist%20chain-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Joe%20gold%20twist%20chain-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Joe%20gold%20twist%20chain-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Joe%20gold%20twist%20chain-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/M charm.jpg": {
+      "width": 3000,
+      "height": 4000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/M%20charm-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/M%20charm-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/M%20charm-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/M%20charm-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/M%20charm-1440.avif"
+        },
+        {
+          "width": 3000,
+          "src": "assets/images/optimized/Jewellery/M%20charm-3000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/M%20charm-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/M%20charm-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/M%20charm-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/M%20charm-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/M%20charm-1440.webp"
+        },
+        {
+          "width": 3000,
+          "src": "assets/images/optimized/Jewellery/M%20charm-3000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/M%20charm-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/M%20charm-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/M%20charm-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/M%20charm-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/M%20charm-1440.jpg"
+        },
+        {
+          "width": 3000,
+          "src": "assets/images/optimized/Jewellery/M%20charm-3000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Men with bracelet peaks background.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Men%20with%20bracelet%20peaks%20background-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Men%20with%20bracelet%20peaks%20background-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Men%20with%20bracelet%20peaks%20background-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Men%20with%20bracelet%20peaks%20background-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Men%20with%20bracelet%20peaks%20background-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Men%20with%20bracelet%20peaks%20background-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Men%20with%20bracelet%20peaks%20background-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Men%20with%20bracelet%20peaks%20background-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Men%20with%20bracelet%20peaks%20background-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Men%20with%20bracelet%20peaks%20background-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Men%20with%20bracelet%20peaks%20background-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Men%20with%20bracelet%20peaks%20background-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Men%20with%20bracelet%20peaks%20background-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Men%20with%20bracelet%20peaks%20background-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Men%20with%20bracelet%20peaks%20background-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Men%20with%20bracelet%20peaks%20background-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Men%20with%20bracelet%20peaks%20background-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Men%20with%20bracelet%20peaks%20background-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Pearl and heart bracelets.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Pearl%20and%20heart%20bracelets-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Pearl%20and%20heart%20bracelets-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Pearl%20and%20heart%20bracelets-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Pearl%20and%20heart%20bracelets-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Pearl%20and%20heart%20bracelets-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Pearl%20and%20heart%20bracelets-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Pearl%20and%20heart%20bracelets-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Pearl%20and%20heart%20bracelets-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Pearl%20and%20heart%20bracelets-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Pearl%20and%20heart%20bracelets-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Pearl%20and%20heart%20bracelets-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Pearl%20and%20heart%20bracelets-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Pearl%20and%20heart%20bracelets-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Pearl%20and%20heart%20bracelets-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Pearl%20and%20heart%20bracelets-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Pearl%20and%20heart%20bracelets-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Pearl%20and%20heart%20bracelets-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Pearl%20and%20heart%20bracelets-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Pearl chain on mirror background.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20mirror%20background-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20mirror%20background-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20mirror%20background-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20mirror%20background-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20mirror%20background-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20mirror%20background-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20mirror%20background-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20mirror%20background-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20mirror%20background-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20mirror%20background-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20mirror%20background-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20mirror%20background-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20mirror%20background-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20mirror%20background-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20mirror%20background-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20mirror%20background-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20mirror%20background-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20mirror%20background-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Pearl chain on white background.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20white%20background-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20white%20background-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20white%20background-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20white%20background-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20white%20background-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20white%20background-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20white%20background-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20white%20background-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20white%20background-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20white%20background-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20white%20background-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20white%20background-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20white%20background-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20white%20background-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20white%20background-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20white%20background-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20white%20background-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Pearl%20chain%20on%20white%20background-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Pop up staffs.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20staffs-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20staffs-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20staffs-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20staffs-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20staffs-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20staffs-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20staffs-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20staffs-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20staffs-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20staffs-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20staffs-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20staffs-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20staffs-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20staffs-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20staffs-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20staffs-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20staffs-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20staffs-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Pop up womens day.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20womens%20day-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20womens%20day-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20womens%20day-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20womens%20day-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20womens%20day-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20womens%20day-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20womens%20day-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20womens%20day-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20womens%20day-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20womens%20day-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20womens%20day-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20womens%20day-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20womens%20day-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20womens%20day-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20womens%20day-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20womens%20day-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20womens%20day-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Pop%20up%20womens%20day-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Silver bracelet with peaks background.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Silver%20bracelet%20with%20peaks%20background-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Silver%20bracelet%20with%20peaks%20background-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Silver%20bracelet%20with%20peaks%20background-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Silver%20bracelet%20with%20peaks%20background-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Silver%20bracelet%20with%20peaks%20background-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Silver%20bracelet%20with%20peaks%20background-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Silver%20bracelet%20with%20peaks%20background-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Silver%20bracelet%20with%20peaks%20background-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Silver%20bracelet%20with%20peaks%20background-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Silver%20bracelet%20with%20peaks%20background-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Silver%20bracelet%20with%20peaks%20background-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Silver%20bracelet%20with%20peaks%20background-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Silver%20bracelet%20with%20peaks%20background-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Silver%20bracelet%20with%20peaks%20background-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Silver%20bracelet%20with%20peaks%20background-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Silver%20bracelet%20with%20peaks%20background-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Silver%20bracelet%20with%20peaks%20background-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Silver%20bracelet%20with%20peaks%20background-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Silver chains in low light.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Silver%20chains%20in%20low%20light-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Silver%20chains%20in%20low%20light-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Silver%20chains%20in%20low%20light-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Silver%20chains%20in%20low%20light-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Silver%20chains%20in%20low%20light-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Silver%20chains%20in%20low%20light-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Silver%20chains%20in%20low%20light-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Silver%20chains%20in%20low%20light-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Silver%20chains%20in%20low%20light-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Silver%20chains%20in%20low%20light-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Silver%20chains%20in%20low%20light-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Silver%20chains%20in%20low%20light-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Silver%20chains%20in%20low%20light-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Silver%20chains%20in%20low%20light-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Silver%20chains%20in%20low%20light-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Silver%20chains%20in%20low%20light-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Silver%20chains%20in%20low%20light-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Silver%20chains%20in%20low%20light-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Silver twist anklet with charm.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20anklet%20with%20charm-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20anklet%20with%20charm-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20anklet%20with%20charm-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20anklet%20with%20charm-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20anklet%20with%20charm-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20anklet%20with%20charm-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20anklet%20with%20charm-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20anklet%20with%20charm-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20anklet%20with%20charm-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20anklet%20with%20charm-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20anklet%20with%20charm-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20anklet%20with%20charm-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20anklet%20with%20charm-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20anklet%20with%20charm-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20anklet%20with%20charm-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20anklet%20with%20charm-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20anklet%20with%20charm-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20anklet%20with%20charm-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Silver twist chain with mirror background.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20chain%20with%20mirror%20background-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20chain%20with%20mirror%20background-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20chain%20with%20mirror%20background-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20chain%20with%20mirror%20background-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20chain%20with%20mirror%20background-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20chain%20with%20mirror%20background-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20chain%20with%20mirror%20background-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20chain%20with%20mirror%20background-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20chain%20with%20mirror%20background-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20chain%20with%20mirror%20background-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20chain%20with%20mirror%20background-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20chain%20with%20mirror%20background-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20chain%20with%20mirror%20background-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20chain%20with%20mirror%20background-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20chain%20with%20mirror%20background-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20chain%20with%20mirror%20background-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20chain%20with%20mirror%20background-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Silver%20twist%20chain%20with%20mirror%20background-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Stock from links.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Stock%20from%20links-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Stock%20from%20links-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Stock%20from%20links-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Stock%20from%20links-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Stock%20from%20links-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Stock%20from%20links-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Stock%20from%20links-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Stock%20from%20links-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Stock%20from%20links-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Stock%20from%20links-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Stock%20from%20links-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Stock%20from%20links-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Stock%20from%20links-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Stock%20from%20links-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Stock%20from%20links-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Stock%20from%20links-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Stock%20from%20links-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Stock%20from%20links-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/T shirts.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/T%20shirts-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/T%20shirts-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/T%20shirts-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/T%20shirts-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/T%20shirts-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/T%20shirts-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/T%20shirts-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/T%20shirts-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/T%20shirts-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/T%20shirts-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/T%20shirts-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/T%20shirts-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/T%20shirts-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/T%20shirts-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/T%20shirts-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/T%20shirts-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/T%20shirts-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/T%20shirts-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Urban Outfitters pop up set up.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Urban%20Outfitters%20pop%20up%20set%20up-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Urban%20Outfitters%20pop%20up%20set%20up-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Urban%20Outfitters%20pop%20up%20set%20up-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Urban%20Outfitters%20pop%20up%20set%20up-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Urban%20Outfitters%20pop%20up%20set%20up-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Urban%20Outfitters%20pop%20up%20set%20up-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Urban%20Outfitters%20pop%20up%20set%20up-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Urban%20Outfitters%20pop%20up%20set%20up-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Urban%20Outfitters%20pop%20up%20set%20up-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Urban%20Outfitters%20pop%20up%20set%20up-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Urban%20Outfitters%20pop%20up%20set%20up-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Urban%20Outfitters%20pop%20up%20set%20up-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Urban%20Outfitters%20pop%20up%20set%20up-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Urban%20Outfitters%20pop%20up%20set%20up-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Urban%20Outfitters%20pop%20up%20set%20up-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Urban%20Outfitters%20pop%20up%20set%20up-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Urban%20Outfitters%20pop%20up%20set%20up-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Urban%20Outfitters%20pop%20up%20set%20up-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Wedding fair pop up with georgie in shot.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Wedding%20fair%20pop%20up%20with%20georgie%20in%20shot-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Wedding%20fair%20pop%20up%20with%20georgie%20in%20shot-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Wedding%20fair%20pop%20up%20with%20georgie%20in%20shot-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Wedding%20fair%20pop%20up%20with%20georgie%20in%20shot-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Wedding%20fair%20pop%20up%20with%20georgie%20in%20shot-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Wedding%20fair%20pop%20up%20with%20georgie%20in%20shot-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Wedding%20fair%20pop%20up%20with%20georgie%20in%20shot-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Wedding%20fair%20pop%20up%20with%20georgie%20in%20shot-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Wedding%20fair%20pop%20up%20with%20georgie%20in%20shot-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Wedding%20fair%20pop%20up%20with%20georgie%20in%20shot-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Wedding%20fair%20pop%20up%20with%20georgie%20in%20shot-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Wedding%20fair%20pop%20up%20with%20georgie%20in%20shot-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Wedding%20fair%20pop%20up%20with%20georgie%20in%20shot-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Wedding%20fair%20pop%20up%20with%20georgie%20in%20shot-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Wedding%20fair%20pop%20up%20with%20georgie%20in%20shot-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Wedding%20fair%20pop%20up%20with%20georgie%20in%20shot-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Wedding%20fair%20pop%20up%20with%20georgie%20in%20shot-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Wedding%20fair%20pop%20up%20with%20georgie%20in%20shot-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Jewellery/Welding bracelet.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Welding%20bracelet-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Welding%20bracelet-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Welding%20bracelet-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Welding%20bracelet-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Welding%20bracelet-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Welding%20bracelet-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Welding%20bracelet-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Welding%20bracelet-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Welding%20bracelet-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Welding%20bracelet-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Welding%20bracelet-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Welding%20bracelet-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Jewellery/Welding%20bracelet-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Jewellery/Welding%20bracelet-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Jewellery/Welding%20bracelet-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Jewellery/Welding%20bracelet-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Jewellery/Welding%20bracelet-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Jewellery/Welding%20bracelet-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Blood nails pt1.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt1-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt1-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt1-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt1-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt1-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt1-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt1-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt1-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt1-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt1-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt1-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt1-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt1-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt1-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt1-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt1-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt1-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt1-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Blood nails pt2.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt2-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt2-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt2-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt2-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt2-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt2-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt2-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt2-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt2-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt2-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt2-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt2-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt2-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt2-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt2-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt2-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt2-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Blood%20nails%20pt2-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Blue extensions pt2.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Blue%20extensions%20pt2-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Blue%20extensions%20pt2-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Blue%20extensions%20pt2-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Blue%20extensions%20pt2-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Blue%20extensions%20pt2-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Blue%20extensions%20pt2-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Blue%20extensions%20pt2-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Blue%20extensions%20pt2-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Blue%20extensions%20pt2-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Blue%20extensions%20pt2-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Blue%20extensions%20pt2-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Blue%20extensions%20pt2-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Blue%20extensions%20pt2-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Blue%20extensions%20pt2-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Blue%20extensions%20pt2-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Blue%20extensions%20pt2-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Blue%20extensions%20pt2-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Blue%20extensions%20pt2-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Blue Extensions.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Blue%20Extensions-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Blue%20Extensions-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Blue%20Extensions-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Blue%20Extensions-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Blue%20Extensions-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Blue%20Extensions-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Blue%20Extensions-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Blue%20Extensions-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Blue%20Extensions-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Blue%20Extensions-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Blue%20Extensions-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Blue%20Extensions-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Blue%20Extensions-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Blue%20Extensions-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Blue%20Extensions-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Blue%20Extensions-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Blue%20Extensions-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Blue%20Extensions-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Brown nails with cherry pt1.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt1-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt1-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt1-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt1-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt1-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt1-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt1-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt1-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt1-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt1-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt1-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt1-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt1-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt1-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt1-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt1-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt1-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt1-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Brown nails with cherry pt2.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt2-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt2-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt2-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt2-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt2-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt2-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt2-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt2-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt2-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt2-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt2-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt2-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt2-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt2-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt2-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt2-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt2-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Brown%20nails%20with%20cherry%20pt2-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Cartoon nails from far away.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails%20from%20far%20away-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails%20from%20far%20away-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails%20from%20far%20away-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails%20from%20far%20away-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails%20from%20far%20away-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails%20from%20far%20away-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails%20from%20far%20away-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails%20from%20far%20away-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails%20from%20far%20away-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails%20from%20far%20away-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails%20from%20far%20away-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails%20from%20far%20away-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails%20from%20far%20away-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails%20from%20far%20away-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails%20from%20far%20away-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails%20from%20far%20away-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails%20from%20far%20away-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails%20from%20far%20away-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Cartoon nails.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Cartoon%20nails-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Cat nails.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Cat%20nails-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Cat%20nails-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Cat%20nails-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Cat%20nails-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Cat%20nails-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Cat%20nails-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Cat%20nails-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Cat%20nails-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Cat%20nails-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Cat%20nails-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Cat%20nails-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Cat%20nails-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Cat%20nails-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Cat%20nails-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Cat%20nails-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Cat%20nails-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Cat%20nails-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Cat%20nails-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Christmas nails.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Christmas%20nails-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Christmas%20nails-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Christmas%20nails-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Christmas%20nails-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Christmas%20nails-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Christmas%20nails-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Christmas%20nails-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Christmas%20nails-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Christmas%20nails-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Christmas%20nails-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Christmas%20nails-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Christmas%20nails-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Christmas%20nails-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Christmas%20nails-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Christmas%20nails-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Christmas%20nails-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Christmas%20nails-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Christmas%20nails-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Green star nails.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Green%20star%20nails-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Green%20star%20nails-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Green%20star%20nails-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Green%20star%20nails-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Green%20star%20nails-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Green%20star%20nails-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Green%20star%20nails-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Green%20star%20nails-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Green%20star%20nails-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Green%20star%20nails-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Green%20star%20nails-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Green%20star%20nails-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Green%20star%20nails-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Green%20star%20nails-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Green%20star%20nails-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Green%20star%20nails-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Green%20star%20nails-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Green%20star%20nails-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Holly christmas nails.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Holly%20christmas%20nails-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Holly%20christmas%20nails-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Holly%20christmas%20nails-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Holly%20christmas%20nails-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Holly%20christmas%20nails-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Holly%20christmas%20nails-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Holly%20christmas%20nails-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Holly%20christmas%20nails-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Holly%20christmas%20nails-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Holly%20christmas%20nails-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Holly%20christmas%20nails-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Holly%20christmas%20nails-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Holly%20christmas%20nails-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Holly%20christmas%20nails-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Holly%20christmas%20nails-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Holly%20christmas%20nails-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Holly%20christmas%20nails-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Holly%20christmas%20nails-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Holly nail on extension.jpg": {
+      "width": 1080,
+      "height": 2340,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Holly%20nail%20on%20extension-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Holly%20nail%20on%20extension-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Holly%20nail%20on%20extension-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Holly%20nail%20on%20extension-1024.avif"
+        },
+        {
+          "width": 1080,
+          "src": "assets/images/optimized/Nails/Holly%20nail%20on%20extension-1080.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Holly%20nail%20on%20extension-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Holly%20nail%20on%20extension-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Holly%20nail%20on%20extension-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Holly%20nail%20on%20extension-1024.webp"
+        },
+        {
+          "width": 1080,
+          "src": "assets/images/optimized/Nails/Holly%20nail%20on%20extension-1080.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Holly%20nail%20on%20extension-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Holly%20nail%20on%20extension-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Holly%20nail%20on%20extension-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Holly%20nail%20on%20extension-1024.jpg"
+        },
+        {
+          "width": 1080,
+          "src": "assets/images/optimized/Nails/Holly%20nail%20on%20extension-1080.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Pale blue extensions.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Pale%20blue%20extensions-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Pale%20blue%20extensions-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Pale%20blue%20extensions-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Pale%20blue%20extensions-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Pale%20blue%20extensions-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Pale%20blue%20extensions-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Pale%20blue%20extensions-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Pale%20blue%20extensions-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Pale%20blue%20extensions-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Pale%20blue%20extensions-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Pale%20blue%20extensions-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Pale%20blue%20extensions-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Pale%20blue%20extensions-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Pale%20blue%20extensions-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Pale%20blue%20extensions-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Pale%20blue%20extensions-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Pale%20blue%20extensions-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Pale%20blue%20extensions-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Pink french with bow.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Pink%20french%20with%20bow-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Pink%20french%20with%20bow-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Pink%20french%20with%20bow-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Pink%20french%20with%20bow-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Pink%20french%20with%20bow-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Pink%20french%20with%20bow-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Pink%20french%20with%20bow-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Pink%20french%20with%20bow-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Pink%20french%20with%20bow-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Pink%20french%20with%20bow-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Pink%20french%20with%20bow-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Pink%20french%20with%20bow-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Pink%20french%20with%20bow-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Pink%20french%20with%20bow-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Pink%20french%20with%20bow-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Pink%20french%20with%20bow-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Pink%20french%20with%20bow-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Pink%20french%20with%20bow-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Pink nails with cherry.jpg": {
+      "width": 3000,
+      "height": 2756,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Pink%20nails%20with%20cherry-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Pink%20nails%20with%20cherry-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Pink%20nails%20with%20cherry-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Pink%20nails%20with%20cherry-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Pink%20nails%20with%20cherry-1440.avif"
+        },
+        {
+          "width": 3000,
+          "src": "assets/images/optimized/Nails/Pink%20nails%20with%20cherry-3000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Pink%20nails%20with%20cherry-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Pink%20nails%20with%20cherry-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Pink%20nails%20with%20cherry-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Pink%20nails%20with%20cherry-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Pink%20nails%20with%20cherry-1440.webp"
+        },
+        {
+          "width": 3000,
+          "src": "assets/images/optimized/Nails/Pink%20nails%20with%20cherry-3000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Pink%20nails%20with%20cherry-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Pink%20nails%20with%20cherry-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Pink%20nails%20with%20cherry-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Pink%20nails%20with%20cherry-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Pink%20nails%20with%20cherry-1440.jpg"
+        },
+        {
+          "width": 3000,
+          "src": "assets/images/optimized/Nails/Pink%20nails%20with%20cherry-3000.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Pink snowflake example.jpg": {
+      "width": 1080,
+      "height": 1898,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Pink%20snowflake%20example-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Pink%20snowflake%20example-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Pink%20snowflake%20example-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Pink%20snowflake%20example-1024.avif"
+        },
+        {
+          "width": 1080,
+          "src": "assets/images/optimized/Nails/Pink%20snowflake%20example-1080.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Pink%20snowflake%20example-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Pink%20snowflake%20example-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Pink%20snowflake%20example-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Pink%20snowflake%20example-1024.webp"
+        },
+        {
+          "width": 1080,
+          "src": "assets/images/optimized/Nails/Pink%20snowflake%20example-1080.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Pink%20snowflake%20example-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Pink%20snowflake%20example-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Pink%20snowflake%20example-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Pink%20snowflake%20example-1024.jpg"
+        },
+        {
+          "width": 1080,
+          "src": "assets/images/optimized/Nails/Pink%20snowflake%20example-1080.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Pink sparkley nails.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Pink%20sparkley%20nails-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Pink%20sparkley%20nails-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Pink%20sparkley%20nails-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Pink%20sparkley%20nails-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Pink%20sparkley%20nails-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Pink%20sparkley%20nails-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Pink%20sparkley%20nails-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Pink%20sparkley%20nails-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Pink%20sparkley%20nails-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Pink%20sparkley%20nails-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Pink%20sparkley%20nails-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Pink%20sparkley%20nails-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Pink%20sparkley%20nails-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Pink%20sparkley%20nails-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Pink%20sparkley%20nails-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Pink%20sparkley%20nails-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Pink%20sparkley%20nails-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Pink%20sparkley%20nails-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Plain red nails square.jpeg": {
+      "width": 3648,
+      "height": 2052,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Plain%20red%20nails%20square-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Plain%20red%20nails%20square-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Plain%20red%20nails%20square-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Plain%20red%20nails%20square-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Plain%20red%20nails%20square-1440.avif"
+        },
+        {
+          "width": 3648,
+          "src": "assets/images/optimized/Nails/Plain%20red%20nails%20square-3648.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Plain%20red%20nails%20square-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Plain%20red%20nails%20square-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Plain%20red%20nails%20square-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Plain%20red%20nails%20square-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Plain%20red%20nails%20square-1440.webp"
+        },
+        {
+          "width": 3648,
+          "src": "assets/images/optimized/Nails/Plain%20red%20nails%20square-3648.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Plain%20red%20nails%20square-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Plain%20red%20nails%20square-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Plain%20red%20nails%20square-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Plain%20red%20nails%20square-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Plain%20red%20nails%20square-1440.jpg"
+        },
+        {
+          "width": 3648,
+          "src": "assets/images/optimized/Nails/Plain%20red%20nails%20square-3648.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Red Extenisons pt1.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Red%20Extenisons%20pt1-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Red%20Extenisons%20pt1-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Red%20Extenisons%20pt1-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Red%20Extenisons%20pt1-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Red%20Extenisons%20pt1-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Red%20Extenisons%20pt1-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Red%20Extenisons%20pt1-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Red%20Extenisons%20pt1-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Red%20Extenisons%20pt1-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Red%20Extenisons%20pt1-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Red%20Extenisons%20pt1-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Red%20Extenisons%20pt1-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Red%20Extenisons%20pt1-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Red%20Extenisons%20pt1-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Red%20Extenisons%20pt1-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Red%20Extenisons%20pt1-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Red%20Extenisons%20pt1-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Red%20Extenisons%20pt1-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Red extensions pt2.jpg": {
+      "width": 3392,
+      "height": 2544,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Red%20extensions%20pt2-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Red%20extensions%20pt2-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Red%20extensions%20pt2-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Red%20extensions%20pt2-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Red%20extensions%20pt2-1440.avif"
+        },
+        {
+          "width": 3392,
+          "src": "assets/images/optimized/Nails/Red%20extensions%20pt2-3392.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Red%20extensions%20pt2-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Red%20extensions%20pt2-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Red%20extensions%20pt2-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Red%20extensions%20pt2-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Red%20extensions%20pt2-1440.webp"
+        },
+        {
+          "width": 3392,
+          "src": "assets/images/optimized/Nails/Red%20extensions%20pt2-3392.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Red%20extensions%20pt2-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Red%20extensions%20pt2-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Red%20extensions%20pt2-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Red%20extensions%20pt2-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Red%20extensions%20pt2-1440.jpg"
+        },
+        {
+          "width": 3392,
+          "src": "assets/images/optimized/Nails/Red%20extensions%20pt2-3392.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Red extenstions pt4.jpg": {
+      "width": 3392,
+      "height": 2544,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Red%20extenstions%20pt4-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Red%20extenstions%20pt4-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Red%20extenstions%20pt4-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Red%20extenstions%20pt4-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Red%20extenstions%20pt4-1440.avif"
+        },
+        {
+          "width": 3392,
+          "src": "assets/images/optimized/Nails/Red%20extenstions%20pt4-3392.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Red%20extenstions%20pt4-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Red%20extenstions%20pt4-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Red%20extenstions%20pt4-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Red%20extenstions%20pt4-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Red%20extenstions%20pt4-1440.webp"
+        },
+        {
+          "width": 3392,
+          "src": "assets/images/optimized/Nails/Red%20extenstions%20pt4-3392.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Red%20extenstions%20pt4-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Red%20extenstions%20pt4-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Red%20extenstions%20pt4-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Red%20extenstions%20pt4-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Red%20extenstions%20pt4-1440.jpg"
+        },
+        {
+          "width": 3392,
+          "src": "assets/images/optimized/Nails/Red%20extenstions%20pt4-3392.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Red extentions pt3.jpg": {
+      "width": 3392,
+      "height": 2544,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Red%20extentions%20pt3-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Red%20extentions%20pt3-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Red%20extentions%20pt3-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Red%20extentions%20pt3-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Red%20extentions%20pt3-1440.avif"
+        },
+        {
+          "width": 3392,
+          "src": "assets/images/optimized/Nails/Red%20extentions%20pt3-3392.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Red%20extentions%20pt3-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Red%20extentions%20pt3-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Red%20extentions%20pt3-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Red%20extentions%20pt3-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Red%20extentions%20pt3-1440.webp"
+        },
+        {
+          "width": 3392,
+          "src": "assets/images/optimized/Nails/Red%20extentions%20pt3-3392.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Red%20extentions%20pt3-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Red%20extentions%20pt3-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Red%20extentions%20pt3-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Red%20extentions%20pt3-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Red%20extentions%20pt3-1440.jpg"
+        },
+        {
+          "width": 3392,
+          "src": "assets/images/optimized/Nails/Red%20extentions%20pt3-3392.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Red flower nails.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Red%20flower%20nails-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Red%20flower%20nails-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Red%20flower%20nails-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Red%20flower%20nails-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Red%20flower%20nails-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Red%20flower%20nails-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Red%20flower%20nails-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Red%20flower%20nails-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Red%20flower%20nails-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Red%20flower%20nails-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Red%20flower%20nails-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Red%20flower%20nails-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Red%20flower%20nails-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Red%20flower%20nails-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Red%20flower%20nails-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Red%20flower%20nails-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Red%20flower%20nails-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Red%20flower%20nails-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Red nails plain.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Red%20nails%20plain-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Red%20nails%20plain-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Red%20nails%20plain-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Red%20nails%20plain-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Red%20nails%20plain-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Red%20nails%20plain-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Red%20nails%20plain-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Red%20nails%20plain-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Red%20nails%20plain-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Red%20nails%20plain-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Red%20nails%20plain-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Red%20nails%20plain-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Red%20nails%20plain-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Red%20nails%20plain-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Red%20nails%20plain-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Red%20nails%20plain-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Red%20nails%20plain-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Red%20nails%20plain-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Red nails with snowflake.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20snowflake-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20snowflake-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20snowflake-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20snowflake-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20snowflake-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20snowflake-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20snowflake-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20snowflake-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20snowflake-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20snowflake-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20snowflake-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20snowflake-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20snowflake-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20snowflake-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20snowflake-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20snowflake-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20snowflake-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20snowflake-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Red nails with white heart.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20white%20heart-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20white%20heart-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20white%20heart-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20white%20heart-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20white%20heart-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20white%20heart-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20white%20heart-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20white%20heart-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20white%20heart-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20white%20heart-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20white%20heart-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20white%20heart-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20white%20heart-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20white%20heart-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20white%20heart-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20white%20heart-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20white%20heart-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Red%20nails%20with%20white%20heart-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Snoeflake nails red.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Snoeflake%20nails%20red-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Snoeflake%20nails%20red-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Snoeflake%20nails%20red-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Snoeflake%20nails%20red-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Snoeflake%20nails%20red-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Snoeflake%20nails%20red-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Snoeflake%20nails%20red-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Snoeflake%20nails%20red-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Snoeflake%20nails%20red-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Snoeflake%20nails%20red-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Snoeflake%20nails%20red-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Snoeflake%20nails%20red-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Snoeflake%20nails%20red-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Snoeflake%20nails%20red-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Snoeflake%20nails%20red-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Snoeflake%20nails%20red-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Snoeflake%20nails%20red-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Snoeflake%20nails%20red-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Strawberry nails.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Strawberry%20nails-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Strawberry%20nails-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Strawberry%20nails-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Strawberry%20nails-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Strawberry%20nails-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Strawberry%20nails-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Strawberry%20nails-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Strawberry%20nails-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Strawberry%20nails-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Strawberry%20nails-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Strawberry%20nails-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Strawberry%20nails-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Strawberry%20nails-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Strawberry%20nails-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Strawberry%20nails-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Strawberry%20nails-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Strawberry%20nails-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Strawberry%20nails-4000.jpg"
+        }
+      ]
+    },
+    "assets/images/Nails/Tree christmas nails.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "avif": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Tree%20christmas%20nails-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Tree%20christmas%20nails-480.avif"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Tree%20christmas%20nails-768.avif"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Tree%20christmas%20nails-1024.avif"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Tree%20christmas%20nails-1440.avif"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Tree%20christmas%20nails-4000.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Tree%20christmas%20nails-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Tree%20christmas%20nails-480.webp"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Tree%20christmas%20nails-768.webp"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Tree%20christmas%20nails-1024.webp"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Tree%20christmas%20nails-1440.webp"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Tree%20christmas%20nails-4000.webp"
+        }
+      ],
+      "jpg": [
+        {
+          "width": 320,
+          "src": "assets/images/optimized/Nails/Tree%20christmas%20nails-320.jpg"
+        },
+        {
+          "width": 480,
+          "src": "assets/images/optimized/Nails/Tree%20christmas%20nails-480.jpg"
+        },
+        {
+          "width": 768,
+          "src": "assets/images/optimized/Nails/Tree%20christmas%20nails-768.jpg"
+        },
+        {
+          "width": 1024,
+          "src": "assets/images/optimized/Nails/Tree%20christmas%20nails-1024.jpg"
+        },
+        {
+          "width": 1440,
+          "src": "assets/images/optimized/Nails/Tree%20christmas%20nails-1440.jpg"
+        },
+        {
+          "width": 4000,
+          "src": "assets/images/optimized/Nails/Tree%20christmas%20nails-4000.jpg"
+        }
+      ]
+    }
+  }
 }

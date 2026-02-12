@@ -424,7 +424,12 @@
       }
 
       if (sizeRule) {
-        const manifestEntry = getManifestEntryForSource(optimisedManifest, img.getAttribute("src") || "");
+        const imageSrc = img.getAttribute("src") || "";
+        const triggerSource =
+          img.closest("[data-lightbox]")?.getAttribute("data-lightbox") || "";
+        const manifestEntry =
+          getManifestEntryForSource(optimisedManifest, imageSrc) ||
+          getManifestEntryForSource(optimisedManifest, triggerSource);
         applyOptimisedImageSources(img, manifestEntry, sizeRule);
       }
 
