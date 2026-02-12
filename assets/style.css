@@ -1534,9 +1534,11 @@ hr.section-rule {
 
   .nav-shell {
     position: absolute;
-    top: 50%;
+    top: 0;
+    bottom: 0;
     right: 0;
-    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
     width: auto;
     max-width: none;
     justify-self: auto;
@@ -1554,7 +1556,7 @@ hr.section-rule {
     position: fixed;
     right: 1rem;
     top: 74px;
-    width: calc(100% - 2rem);
+    width: min(20rem, calc(100vw - 2rem));
     max-width: 20rem;
     background: color-mix(in srgb, var(--card), white 26%);
     border: 1px solid color-mix(in srgb, var(--border), transparent 12%);
