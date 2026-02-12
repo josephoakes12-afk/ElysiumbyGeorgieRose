@@ -1131,6 +1131,10 @@ h4 {
   display: none !important;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 .faq-categories {
   display: grid;
   gap: var(--space-3);
