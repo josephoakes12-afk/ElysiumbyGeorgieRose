@@ -1534,10 +1534,13 @@ hr.section-rule {
   }
 
   .nav-shell {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
     width: auto;
     max-width: none;
-    justify-self: end;
+    justify-self: auto;
   }
 
   .nav-toggle {
@@ -1550,11 +1553,10 @@ hr.section-rule {
 
   .site-nav-links {
     position: fixed;
-    left: 50%;
-    top: 50%;
-    width: min(92vw, 22rem);
-    max-width: 22rem;
-    min-height: min(70vh, 30rem);
+    right: 1rem;
+    top: 74px;
+    width: calc(100% - 2rem);
+    max-width: 20rem;
     background: color-mix(in srgb, var(--card), white 26%);
     border: 1px solid color-mix(in srgb, var(--border), transparent 12%);
     border-radius: var(--radius-md);
@@ -1569,6 +1571,7 @@ hr.section-rule {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 151;
   }
 
   .site-nav-links a {

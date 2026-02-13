@@ -1534,12 +1534,15 @@ hr.section-rule {
 
   .nav-shell {
     position: absolute;
-    top: 50%;
+    top: 0;
+    bottom: 0;
     right: 0;
-    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
     width: auto;
     max-width: none;
     justify-self: auto;
+    z-index: 150;
   }
 
   .nav-toggle {
@@ -1551,11 +1554,14 @@ hr.section-rule {
   }
 
   .site-nav-links {
-    position: fixed;
-    right: 1rem;
-    top: 74px;
-    width: calc(100% - 2rem);
-    max-width: 20rem;
+    position: absolute;
+    top: calc(100% + 0.65rem);
+    right: 0;
+    left: auto;
+    width: min(20rem, calc(100vw - 2rem));
+    max-width: calc(100vw - 2rem);
+    max-height: calc(100dvh - 96px);
+    overflow: auto;
     background: color-mix(in srgb, var(--card), white 26%);
     border: 1px solid color-mix(in srgb, var(--border), transparent 12%);
     border-radius: var(--radius-md);
@@ -1569,6 +1575,7 @@ hr.section-rule {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 151;
   }
 
   .site-nav-links.is-open {
