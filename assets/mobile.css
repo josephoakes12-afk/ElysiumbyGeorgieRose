@@ -115,8 +115,29 @@
   }
 
   .header-inner {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 12px;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  .brand {
+    min-width: 0;
+    gap: 10px;
+  }
+
+  .brand-text {
+    min-width: 0;
+  }
+
+  .brand-name {
+    font-size: clamp(0.82rem, 3.8vw, 0.98rem);
+    line-height: 1.2;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    overflow-wrap: anywhere;
   }
 
   .brand-mark {
@@ -138,17 +159,29 @@
 
   /* --- Nav: make menu easier on mobile --- */
   .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     min-height: 44px;
     padding: 10px 14px;
     border-radius: 999px;
   }
 
+  .site-nav-links {
+    width: min(92vw, 21rem);
+    min-height: min(68vh, 28rem);
+    padding: 16px 14px;
+    gap: 8px;
+  }
+
   .site-nav-links a {
     min-height: 44px;
-    padding: 14px 12px;
-    font-size: 16px;
+    padding: 12px;
+    font-size: clamp(0.95rem, 3.8vw, 1.02rem);
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   /* --- Hide repeated in-page CTA bands on mobile (sticky CTA replaces them) --- */
@@ -225,6 +258,18 @@
 
   html.has-horizontal-overflow * {
     outline: 1px solid rgba(255, 0, 0, 0.15);
+  }
+}
+
+@media (max-width: 420px) {
+  .brand-name {
+    font-size: clamp(0.78rem, 3.9vw, 0.9rem);
+  }
+
+  .site-nav-links {
+    width: min(94vw, 20rem);
+    min-height: min(72vh, 27rem);
+    padding: 14px 12px;
   }
 }
 
