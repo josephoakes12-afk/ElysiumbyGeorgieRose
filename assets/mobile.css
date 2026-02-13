@@ -122,6 +122,20 @@
     padding-bottom: 10px;
   }
 
+  .nav-shell {
+    position: static;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    transform: none;
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    width: auto;
+    max-width: none;
+    z-index: auto;
+  }
+
   .brand {
     min-width: 0;
     gap: 10px;
