@@ -351,25 +351,35 @@ body.no-scroll {
   }
 
   #mobileNavPanel {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: min(92vw, 420px);
-    max-height: calc(100dvh - 2rem);
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: auto !important;
+    margin: 0 !important;
+    transform: translate(-50%, -50%) !important;
+    width: min(92vw, 420px) !important;
+    min-height: 0 !important;
+    max-height: calc(100dvh - 2rem) !important;
     overflow: auto;
     border-radius: 16px;
     padding: 18px;
     background: var(--card, #fff);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
-    display: none;
+    display: none !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
     flex-direction: column;
     gap: 8px;
     z-index: 10000;
   }
 
+  #mobileNavOverlay[data-open="false"] + #mobileNavPanel {
+    display: none !important;
+  }
+
   #mobileNavOverlay[data-open="true"] + #mobileNavPanel {
-    display: flex;
+    display: flex !important;
   }
 
   #mobileNavClose {
