@@ -1554,13 +1554,13 @@ hr.section-rule {
   }
 
   .site-nav-links {
-    position: absolute;
-    top: calc(100% + 0.65rem);
-    right: 0;
-    left: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    right: auto;
     width: min(20rem, calc(100vw - 2rem));
     max-width: calc(100vw - 2rem);
-    max-height: calc(100dvh - 96px);
+    max-height: calc(100dvh - 2rem);
     overflow: auto;
     background: color-mix(in srgb, var(--card), white 26%);
     border: 1px solid color-mix(in srgb, var(--border), transparent 12%);
@@ -1571,7 +1571,7 @@ hr.section-rule {
     grid-template-columns: 1fr;
     justify-content: stretch;
     gap: var(--space-2);
-    transform: translateY(-8px);
+    transform: translate(-50%, -52%);
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.2s ease, transform 0.2s ease;
@@ -1579,7 +1579,7 @@ hr.section-rule {
   }
 
   .site-nav-links.is-open {
-    transform: translateY(0);
+    transform: translate(-50%, -50%);
     opacity: 1;
     pointer-events: auto;
   }
