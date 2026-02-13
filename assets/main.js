@@ -566,6 +566,8 @@
 
     const mobileQuery = window.matchMedia("(max-width: 768px)");
     let isOpen = false;
+    const originalParent = overlay.parentNode;
+    const originalNextSibling = overlay.nextSibling;
 
     const getFocusable = () =>
       Array.from(
@@ -574,10 +576,30 @@
         )
       );
 
+    const mountToBody = () => {
+      if (overlay.parentNode !== document.body) {
+        document.body.appendChild(overlay);
+      }
+      if (panel.parentNode !== document.body) {
+        document.body.appendChild(panel);
+      }
+    };
+
+    const restoreToHeader = () => {
+      if (!originalParent) return;
+      if (overlay.parentNode !== originalParent) {
+        originalParent.insertBefore(overlay, originalNextSibling || null);
+      }
+      if (panel.parentNode !== originalParent) {
+        originalParent.insertBefore(panel, overlay.nextSibling);
+      }
+    };
+
     const applyClosedState = () => {
       isOpen = false;
       overlay.setAttribute("data-open", "false");
       overlay.setAttribute("aria-hidden", "true");
+      panel.setAttribute("data-open", "false");
       panel.classList.remove("is-open");
       panel.setAttribute("inert", "");
       toggle.setAttribute("aria-expanded", "false");
@@ -589,6 +611,7 @@
       isOpen = false;
       overlay.setAttribute("data-open", "false");
       overlay.setAttribute("aria-hidden", "true");
+      panel.setAttribute("data-open", "false");
       panel.classList.remove("is-open");
       panel.removeAttribute("inert");
       toggle.setAttribute("aria-expanded", "false");
@@ -598,8 +621,10 @@
 
     const syncNavStateForViewport = () => {
       if (mobileQuery.matches) {
+        mountToBody();
         applyClosedState();
       } else {
+        restoreToHeader();
         applyDesktopState();
       }
     };
@@ -609,6 +634,7 @@
       isOpen = true;
       overlay.setAttribute("data-open", "true");
       overlay.setAttribute("aria-hidden", "false");
+      panel.setAttribute("data-open", "true");
       panel.classList.add("is-open");
       panel.removeAttribute("inert");
       toggle.setAttribute("aria-expanded", "true");
