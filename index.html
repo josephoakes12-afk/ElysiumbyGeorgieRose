@@ -42,9 +42,10 @@
       </a>
 
       <nav class="nav-shell" aria-label="Primary">
-        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
-        <div class="nav-backdrop" data-nav-backdrop></div>
-        <div id="site-menu" class="site-nav-links" data-nav-menu>
+        <button id="mobileNavToggle" class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobileNavOverlay" aria-haspopup="dialog">Menu</button>
+        <div id="mobileNavOverlay" class="nav-backdrop" data-nav-backdrop data-open="false" aria-hidden="true"></div>
+        <div id="mobileNavPanel" class="site-nav-links" data-nav-menu role="dialog" aria-modal="true" aria-label="Mobile primary navigation" tabindex="-1">
+          <button id="mobileNavClose" class="nav-close" type="button" aria-label="Close menu">Close</button>
           <a href="index.html" aria-current="page">Home</a>
           <a href="nails.html">Nails</a>
           <a href="jewellery.html">Permanent Jewellery</a>
@@ -458,5 +459,3 @@
   </div>
 </body>
 </html>
-
-

@@ -557,55 +557,73 @@
   };
 
   const initMobileNav = () => {
-    const toggle = document.querySelector("[data-nav-toggle]");
-    const menu = document.querySelector("[data-nav-menu]");
-    const backdrop = document.querySelector("[data-nav-backdrop]");
+    const toggle = document.getElementById("mobileNavToggle") || document.querySelector("[data-nav-toggle]");
+    const overlay = document.getElementById("mobileNavOverlay") || document.querySelector("[data-nav-backdrop]");
+    const panel = document.getElementById("mobileNavPanel") || document.querySelector("[data-nav-menu]");
+    const closeButton = document.getElementById("mobileNavClose");
 
-    if (!toggle || !menu || !backdrop) return;
+    if (!toggle || !overlay || !panel) return;
 
-    const mobileQuery = window.matchMedia("(max-width: 960px)");
+    const mobileQuery = window.matchMedia("(max-width: 768px)");
     let isOpen = false;
-    let lastFocused = null;
 
     const getFocusable = () =>
       Array.from(
-        menu.querySelectorAll(
+        panel.querySelectorAll(
           'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
         )
       );
 
-    if (!menu.id) {
-      const existingControlId = toggle.getAttribute("aria-controls");
-      menu.id = isNonEmptyString(existingControlId) ? existingControlId : "site-menu";
-    }
-    if (toggle.getAttribute("aria-controls") !== menu.id) {
-      toggle.setAttribute("aria-controls", menu.id);
-    }
-
-    const applyDesktopState = () => {
+    const applyClosedState = () => {
       isOpen = false;
-      menu.classList.remove("is-open");
-      backdrop.classList.remove("is-open");
-      menu.removeAttribute("inert");
+      overlay.setAttribute("data-open", "false");
+      overlay.setAttribute("aria-hidden", "true");
+      panel.classList.remove("is-open");
+      panel.setAttribute("inert", "");
       toggle.setAttribute("aria-expanded", "false");
+      document.body.classList.remove("no-scroll");
       document.body.classList.remove("menu-open");
     };
 
-    const applyMobileClosedState = () => {
+    const applyDesktopState = () => {
       isOpen = false;
-      menu.classList.remove("is-open");
-      backdrop.classList.remove("is-open");
-      menu.setAttribute("inert", "");
+      overlay.setAttribute("data-open", "false");
+      overlay.setAttribute("aria-hidden", "true");
+      panel.classList.remove("is-open");
+      panel.removeAttribute("inert");
       toggle.setAttribute("aria-expanded", "false");
+      document.body.classList.remove("no-scroll");
       document.body.classList.remove("menu-open");
     };
 
     const syncNavStateForViewport = () => {
       if (mobileQuery.matches) {
-        applyMobileClosedState();
+        applyClosedState();
       } else {
         applyDesktopState();
       }
+    };
+
+    const openMenu = () => {
+      if (!mobileQuery.matches) return;
+      isOpen = true;
+      overlay.setAttribute("data-open", "true");
+      overlay.setAttribute("aria-hidden", "false");
+      panel.classList.add("is-open");
+      panel.removeAttribute("inert");
+      toggle.setAttribute("aria-expanded", "true");
+      document.body.classList.add("no-scroll");
+
+      const firstLink = panel.querySelector("a[href]");
+      const focusable = getFocusable();
+      const target = firstLink || focusable[0];
+      if (target) target.focus();
+    };
+
+    const closeMenu = () => {
+      if (!isOpen && overlay.getAttribute("data-open") !== "true") return;
+      applyClosedState();
+      toggle.focus();
     };
 
     syncNavStateForViewport();
@@ -614,29 +632,6 @@
     } else if (typeof mobileQuery.addListener === "function") {
       mobileQuery.addListener(syncNavStateForViewport);
     }
-
-    const openMenu = () => {
-      if (!mobileQuery.matches) return;
-      isOpen = true;
-      lastFocused = document.activeElement;
-      menu.removeAttribute("inert");
-      menu.classList.add("is-open");
-      backdrop.classList.add("is-open");
-      toggle.setAttribute("aria-expanded", "true");
-      document.body.classList.add("menu-open");
-      const focusable = getFocusable();
-      if (focusable.length) {
-        focusable[0].focus();
-      }
-    };
-
-    const closeMenu = () => {
-      if (!isOpen) return;
-      applyMobileClosedState();
-      if (lastFocused && typeof lastFocused.focus === "function") {
-        lastFocused.focus();
-      }
-    };
 
     toggle.addEventListener("click", () => {
       if (!mobileQuery.matches) return;
@@ -647,12 +642,21 @@
       }
     });
 
-    backdrop.addEventListener("click", () => {
+    if (closeButton) {
+      closeButton.addEventListener("click", () => {
+        if (!mobileQuery.matches) return;
+        closeMenu();
+      });
+    }
+
+    overlay.addEventListener("click", (event) => {
       if (!mobileQuery.matches) return;
-      closeMenu();
+      if (event.target === overlay) {
+        closeMenu();
+      }
     });
 
-    menu.querySelectorAll("a").forEach((link) => {
+    panel.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", () => {
         if (!mobileQuery.matches) return;
         closeMenu();
@@ -667,9 +671,9 @@
         return;
       }
       if (event.key !== "Tab") return;
+
       const focusable = getFocusable();
       if (!focusable.length) return;
-
       const first = focusable[0];
       const last = focusable[focusable.length - 1];
 
